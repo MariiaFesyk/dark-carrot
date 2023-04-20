@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8cde54d3c3c504a06abb3e1ab28f580f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - damaged: {fileID: 2100000, guid: e8c7cf5bbe1124b37800f0d04f622a8a, type: 2}
+  - notDamaged: {fileID: 2100000, guid: dca98d927a5c64a8697d4799fb83fb12, type: 2}
+  - kegOfBeer: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
