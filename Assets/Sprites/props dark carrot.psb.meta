@@ -1,0 +1,2097 @@
+fileFormatVersion: 2
+guid: 16946e26442f77a47b7d6c959b4f6bcd
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 256
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData:
+  - name: candle on table
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4745
+      y: 3221
+      width: 66
+      height: 105
+    spriteID: 7cbea0415630a084e9c4de91b76d9bd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4745, y: 3221}
+    spritePosition: {x: 6401, y: 1430}
+  - name: gramophone
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6759
+      y: 2847
+      width: 305
+      height: 381
+    spriteID: f94e85687e0a2c34a8401b7cb66a6217
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6759, y: 2847}
+    spritePosition: {x: 5898, y: 1962}
+  - name: gramophone table
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6412
+      y: 2847
+      width: 339
+      height: 425
+    spriteID: 0ca629fbbddd5b446beeeda540eefc74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6412, y: 2847}
+    spritePosition: {x: 5918, y: 1774}
+  - name: door to kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1850
+      y: 2226
+      width: 633
+      height: 1240
+    spriteID: 3ead1b946acc3b74fb9b7f9aba74f211
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1850, y: 2226}
+    spritePosition: {x: 3927, y: 999}
+  - name: strip of plinth to kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2491
+      y: 3194
+      width: 517
+      height: 293
+    spriteID: 4b31804ba5f4d2c4b9ecea4392932550
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2491, y: 3194}
+    spritePosition: {x: 4036, y: 1101}
+  - name: brewery machine
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1039
+      y: 2226
+      width: 803
+      height: 1040
+    spriteID: 0a9e7b4b64c50db46a82c67bc059507f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1039, y: 2226}
+    spritePosition: {x: 2119, y: 1619}
+  - name: candles on wall 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7721
+      y: 3148
+      width: 291
+      height: 313
+    spriteID: 0571ab785a9ab01428808bcc16666e09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7721, y: 3148}
+    spritePosition: {x: 1517, y: 1951}
+  - name: candles on wall 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3016
+      y: 3194
+      width: 193
+      height: 240
+    spriteID: 331b8f0e10ac57b4bb53cbe05e1607be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3016, y: 3194}
+    spritePosition: {x: 5572, y: 2199}
+  - name: candles on wall 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7072
+      y: 2847
+      width: 393
+      height: 293
+    spriteID: 774d9578deb34ae40bb3346997f8881f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7072, y: 2847}
+    spritePosition: {x: 2881, y: 2450}
+  - name: banner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7197
+      y: 2226
+      width: 336
+      height: 518
+    spriteID: 0a633730af3257d4f8fb24f0777766a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7197, y: 2226}
+    spritePosition: {x: 7712, y: 1767}
+  - name: things in shelf in the kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5785
+      y: 3065
+      width: 524
+      height: 346
+    spriteID: 46072f1b4353ae94d8016bda4a619ed7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5785, y: 3065}
+    spritePosition: {x: 3221, y: 1883}
+  - name: shelf in kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6756
+      y: 4
+      width: 1126
+      height: 1147
+    spriteID: 250a5cf3eb5aa464db8d36bf966b99a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6756, y: 4}
+    spritePosition: {x: 3104, y: 1494}
+  - name: table in main room
+    originalName: 
+    pivot: {x: 0.47755843, y: 0.024743266}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6786
+      y: 2226
+      width: 403
+      height: 442
+    spriteID: b665a4c12faf71d498860b7a6a0749b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6786, y: 2226}
+    spritePosition: {x: 6255, y: 1109}
+  - name: counter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3278
+      y: 2226
+      width: 975
+      height: 675
+    spriteID: 2b0d32536a51d6a43b9d989e0c812f96
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3278, y: 2226}
+    spritePosition: {x: 4848, y: 947}
+  - name: shelf near counter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2226
+      width: 1027
+      height: 1279
+    spriteID: 597140ab803adb748bcb7c3730874c2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2226}
+    spritePosition: {x: 4503, y: 1241}
+  - name: grill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5785
+      y: 2226
+      width: 619
+      height: 831
+    spriteID: 5ef1fb740479d7a4a96be7a0171fc895
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5785, y: 2226}
+    spritePosition: {x: 1579, y: 1414}
+  - name: mixer
+    originalName: 
+    pivot: {x: 0.4827207, y: 0.06667349}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6412
+      y: 2226
+      width: 366
+      height: 613
+    spriteID: bdec9a9d4a1c96d4ba7190b9b8cad1cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6412, y: 2226}
+    spritePosition: {x: 2778, y: 1908}
+  - name: barrel with bones
+    originalName: 
+    pivot: {x: 0.48905537, y: 0.035011537}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7890
+      y: 4
+      width: 287
+      height: 456
+    spriteID: 2542ab0e5d0064b42b1bac6f25b504ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7890, y: 4}
+    spritePosition: {x: 3004, y: 734}
+  - name: kitchen table 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7072
+      y: 3148
+      width: 324
+      height: 340
+    spriteID: 365d03fbb261ede468e54b0e1ef60fbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7072, y: 3148}
+    spritePosition: {x: 2710, y: 1155}
+  - name: kitchen table 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4896
+      y: 2226
+      width: 881
+      height: 650
+    spriteID: 4e342008983376e44bffbc105ab46747
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4896, y: 2226}
+    spritePosition: {x: 1995, y: 920}
+  - name: kitchen table 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4896
+      y: 2884
+      width: 644
+      height: 574
+    spriteID: 938579a42388ca846b20df217c72bd87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4896, y: 2884}
+    spritePosition: {x: 3219, y: 832}
+  - name: barrel with carrot
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7541
+      y: 2226
+      width: 373
+      height: 389
+    spriteID: b03a615b46a5fdc4d989ec27ac48a6a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7541, y: 2226}
+    spritePosition: {x: 5700, y: 1353}
+  - name: wine shelf main room
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2491
+      y: 2226
+      width: 779
+      height: 960
+    spriteID: c5c5839b289070d46bf3dc98589f1aa0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2491, y: 2226}
+    spritePosition: {x: 6425, y: 1621}
+  - name: darts
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7404
+      y: 3148
+      width: 309
+      height: 351
+    spriteID: 9cf23ad9c3c1b1c468e7e1a18084573e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7404, y: 3148}
+    spritePosition: {x: 7418, y: 1956}
+  - name: head of monster on wall
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 6744
+      height: 1266
+    spriteID: 04f504176feac444a9a51339b50adcd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 1669, y: 1282}
+  - name: entrance door
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4261
+      y: 2226
+      width: 627
+      height: 987
+    spriteID: 1c34eab6c95eed14babd2de9878df588
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4261, y: 2226}
+    spritePosition: {x: 7430, y: 158}
+  - name: light from entrance door
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1278
+      width: 2027
+      height: 940
+    spriteID: f6079bf385d39594784c3a8ef7db54a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -312, y: 1108}
+    spritePosition: {x: 6810, y: 170}
+  - name: floor tile main room
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3278
+      y: 2909
+      width: 953
+      height: 477
+    spriteID: ee28b080e234cef42abc004b435a6c7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3278, y: 2909}
+    spritePosition: {x: 4063, y: 299}
+  - name: floor tile kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4261
+      y: 3221
+      width: 476
+      height: 238
+    spriteID: 6edb27d90bedc114c858b4f884001ffb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4261, y: 3221}
+    spritePosition: {x: 4005, y: 687}
+  - name: props dark carrot_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 0
+      width: 7967
+      height: 4874
+    spriteID: 990c2e85a05180e4fa0487a99e455817
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 225, y: 0}
+    spritePosition: {x: 0, y: 0}
+  - name: props dark carrot_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 8192
+      height: 7228
+    spriteID: 5bd1f947bc4492749a2e4ff107be82bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: candle on table
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4745
+      y: 3221
+      width: 66
+      height: 105
+    spriteID: befbf8142acdd954399456ef5a245ece
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4745, y: 3221}
+    spritePosition: {x: 6401, y: 1430}
+  - name: gramophone
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6759
+      y: 2847
+      width: 305
+      height: 381
+    spriteID: a8800bdc0d6e136409ed2fb8b2901c2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6759, y: 2847}
+    spritePosition: {x: 5898, y: 1962}
+  - name: gramophone table
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6412
+      y: 2847
+      width: 339
+      height: 425
+    spriteID: f6aa552f143689e489b6c4d83eab2ca5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6412, y: 2847}
+    spritePosition: {x: 5918, y: 1774}
+  - name: door to kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1850
+      y: 2226
+      width: 633
+      height: 1240
+    spriteID: 9e97db8331e51024ebfc9a7400c5e13a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1850, y: 2226}
+    spritePosition: {x: 3927, y: 999}
+  - name: strip of plinth to kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2491
+      y: 3194
+      width: 517
+      height: 293
+    spriteID: e1b58dea393317141b06844868e20ee7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2491, y: 3194}
+    spritePosition: {x: 4036, y: 1101}
+  - name: brewery machine
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1039
+      y: 2226
+      width: 803
+      height: 1040
+    spriteID: 1a3b2b59ea347d242a315b1090e62cfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1039, y: 2226}
+    spritePosition: {x: 2119, y: 1619}
+  - name: candles on wall 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7721
+      y: 3148
+      width: 291
+      height: 313
+    spriteID: b82a4025f7fe32f4ca87b828e73e802f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7721, y: 3148}
+    spritePosition: {x: 1517, y: 1951}
+  - name: candles on wall 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3016
+      y: 3194
+      width: 193
+      height: 240
+    spriteID: 1e8cbbdc3e6a7504db2d7c6bdfb3233a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3016, y: 3194}
+    spritePosition: {x: 5572, y: 2199}
+  - name: candles on wall 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7072
+      y: 2847
+      width: 393
+      height: 293
+    spriteID: 88bd8c1c89e76c74e888cfd753a2a75f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7072, y: 2847}
+    spritePosition: {x: 2881, y: 2450}
+  - name: banner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7197
+      y: 2226
+      width: 336
+      height: 518
+    spriteID: 9983b60f02f1bac4abac53d36dbc5645
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7197, y: 2226}
+    spritePosition: {x: 7712, y: 1767}
+  - name: things in shelf in the kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5785
+      y: 3065
+      width: 524
+      height: 346
+    spriteID: 6b212129c914c07479b76acdb5a608e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5785, y: 3065}
+    spritePosition: {x: 3221, y: 1883}
+  - name: shelf in kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6756
+      y: 4
+      width: 1126
+      height: 1147
+    spriteID: e7b4f0f837f872a4ea55fd456acbeb35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6756, y: 4}
+    spritePosition: {x: 3104, y: 1494}
+  - name: table in main room
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6786
+      y: 2226
+      width: 403
+      height: 442
+    spriteID: 5eafef720fad7444cb32b686b37a8a60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6786, y: 2226}
+    spritePosition: {x: 6255, y: 1109}
+  - name: counter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3278
+      y: 2226
+      width: 975
+      height: 675
+    spriteID: d055b9fff25e81e4b90c1b086de7d388
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3278, y: 2226}
+    spritePosition: {x: 4848, y: 947}
+  - name: shelf near counter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2226
+      width: 1027
+      height: 1279
+    spriteID: 2ccc4ef018ec1024ea6ddba794b86c31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2226}
+    spritePosition: {x: 4503, y: 1241}
+  - name: grill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5785
+      y: 2226
+      width: 619
+      height: 831
+    spriteID: e1cf44d87e4c3f045b7dc8ea0868b484
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5785, y: 2226}
+    spritePosition: {x: 1579, y: 1414}
+  - name: mixer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6412
+      y: 2226
+      width: 366
+      height: 613
+    spriteID: 91cfc122644e2bd4eac768ffe00b9074
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6412, y: 2226}
+    spritePosition: {x: 2778, y: 1908}
+  - name: barrel with bones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7890
+      y: 4
+      width: 287
+      height: 456
+    spriteID: 668fcfb54eba5da47916cf4d34efd2bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7890, y: 4}
+    spritePosition: {x: 3004, y: 734}
+  - name: kitchen table 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7072
+      y: 3148
+      width: 324
+      height: 340
+    spriteID: ad75d9aa47bdf064386663dc8a1a2b9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7072, y: 3148}
+    spritePosition: {x: 2710, y: 1155}
+  - name: kitchen table 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4896
+      y: 2226
+      width: 881
+      height: 650
+    spriteID: bef8050c66736b245a97c419f91cb57c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4896, y: 2226}
+    spritePosition: {x: 1995, y: 920}
+  - name: kitchen table 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4896
+      y: 2884
+      width: 644
+      height: 574
+    spriteID: 63894d42dd146c04db4be5931c23f6d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4896, y: 2884}
+    spritePosition: {x: 3219, y: 832}
+  - name: barrel with carrot
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7541
+      y: 2226
+      width: 373
+      height: 389
+    spriteID: 58c565d9edd480c41916ec68d3d86adc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7541, y: 2226}
+    spritePosition: {x: 5700, y: 1353}
+  - name: wine shelf main room
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2491
+      y: 2226
+      width: 779
+      height: 960
+    spriteID: 76e1926c6c0ded342bbfd0607cda9d97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2491, y: 2226}
+    spritePosition: {x: 6425, y: 1621}
+  - name: darts
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7404
+      y: 3148
+      width: 309
+      height: 351
+    spriteID: 832efa0bdfc9a594db340c04e42101fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7404, y: 3148}
+    spritePosition: {x: 7418, y: 1956}
+  - name: head of monster on wall
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 6744
+      height: 1266
+    spriteID: 3a756d382e9cacc4dbbf7f6e0c2e5a9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 1669, y: 1282}
+  - name: entrance door
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4261
+      y: 2226
+      width: 627
+      height: 987
+    spriteID: 956f04a99fc76ca41934760319d1885a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4261, y: 2226}
+    spritePosition: {x: 7430, y: 158}
+  - name: light from entrance door
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1278
+      width: 2027
+      height: 940
+    spriteID: 3fccd4c528ee9c9458eee2c7e60b3946
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -312, y: 1108}
+    spritePosition: {x: 6810, y: 170}
+  - name: floor tile main room
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3278
+      y: 2909
+      width: 953
+      height: 477
+    spriteID: 137b2891d4da7af42bc8313bfd41d55b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3278, y: 2909}
+    spritePosition: {x: 4063, y: 299}
+  - name: floor tile kitchen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4261
+      y: 3221
+      width: 476
+      height: 238
+    spriteID: ac4b36a3232d109408d327781539a71d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4261, y: 3221}
+    spritePosition: {x: 4005, y: 687}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 0
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers:
+  - name: "\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B"
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: ff91f9345fb8fef46bbd065c2344e5ce
+    layerID: 61
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: candle on table
+    spriteName: candle on table
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7cbea0415630a084e9c4de91b76d9bd6
+    layerID: 60
+    mosaicPosition: {x: 4745, y: 3221}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: gramophone
+    spriteName: gramophone
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f94e85687e0a2c34a8401b7cb66a6217
+    layerID: 59
+    mosaicPosition: {x: 6759, y: 2847}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: gramophone table
+    spriteName: gramophone table
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0ca629fbbddd5b446beeeda540eefc74
+    layerID: 58
+    mosaicPosition: {x: 6412, y: 2847}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door to kitchen
+    spriteName: door to kitchen
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3ead1b946acc3b74fb9b7f9aba74f211
+    layerID: 56
+    mosaicPosition: {x: 1850, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: strip of plinth to kitchen
+    spriteName: strip of plinth to kitchen
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4b31804ba5f4d2c4b9ecea4392932550
+    layerID: 54
+    mosaicPosition: {x: 2491, y: 3194}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: brewery machine
+    spriteName: brewery machine
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0a9e7b4b64c50db46a82c67bc059507f
+    layerID: 53
+    mosaicPosition: {x: 1039, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: candles on wall 3
+    spriteName: candles on wall 3
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0571ab785a9ab01428808bcc16666e09
+    layerID: 51
+    mosaicPosition: {x: 7721, y: 3148}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: candles on wall 2
+    spriteName: candles on wall 2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 331b8f0e10ac57b4bb53cbe05e1607be
+    layerID: 49
+    mosaicPosition: {x: 3016, y: 3194}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: candles on wall 1
+    spriteName: candles on wall 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 774d9578deb34ae40bb3346997f8881f
+    layerID: 27
+    mosaicPosition: {x: 7072, y: 2847}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: banner
+    spriteName: banner
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0a633730af3257d4f8fb24f0777766a5
+    layerID: 46
+    mosaicPosition: {x: 7197, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: things in shelf in the kitchen
+    spriteName: things in shelf in the kitchen
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 46072f1b4353ae94d8016bda4a619ed7
+    layerID: 42
+    mosaicPosition: {x: 5785, y: 3065}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: shelf in kitchen
+    spriteName: shelf in kitchen
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 250a5cf3eb5aa464db8d36bf966b99a9
+    layerID: 41
+    mosaicPosition: {x: 6756, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: table in main room
+    spriteName: table in main room
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b665a4c12faf71d498860b7a6a0749b7
+    layerID: 39
+    mosaicPosition: {x: 6786, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: counter
+    spriteName: counter
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2b0d32536a51d6a43b9d989e0c812f96
+    layerID: 37
+    mosaicPosition: {x: 3278, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: shelf near counter
+    spriteName: shelf near counter
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 597140ab803adb748bcb7c3730874c2d
+    layerID: 35
+    mosaicPosition: {x: 4, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: grill
+    spriteName: grill
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5ef1fb740479d7a4a96be7a0171fc895
+    layerID: 33
+    mosaicPosition: {x: 5785, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: mixer
+    spriteName: mixer
+    isGroup: 0
+    parentIndex: 0
+    spriteID: bdec9a9d4a1c96d4ba7190b9b8cad1cc
+    layerID: 29
+    mosaicPosition: {x: 6412, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: barrel with bones
+    spriteName: barrel with bones
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2542ab0e5d0064b42b1bac6f25b504ec
+    layerID: 25
+    mosaicPosition: {x: 7890, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: kitchen table 3
+    spriteName: kitchen table 3
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 365d03fbb261ede468e54b0e1ef60fbd
+    layerID: 44
+    mosaicPosition: {x: 7072, y: 3148}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: kitchen table 2
+    spriteName: kitchen table 2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4e342008983376e44bffbc105ab46747
+    layerID: 31
+    mosaicPosition: {x: 4896, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: kitchen table 1
+    spriteName: kitchen table 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 938579a42388ca846b20df217c72bd87
+    layerID: 23
+    mosaicPosition: {x: 4896, y: 2884}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: barrel with carrot
+    spriteName: barrel with carrot
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b03a615b46a5fdc4d989ec27ac48a6a0
+    layerID: 21
+    mosaicPosition: {x: 7541, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: wine shelf main room
+    spriteName: wine shelf main room
+    isGroup: 0
+    parentIndex: 0
+    spriteID: c5c5839b289070d46bf3dc98589f1aa0
+    layerID: 19
+    mosaicPosition: {x: 2491, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: darts
+    spriteName: darts
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9cf23ad9c3c1b1c468e7e1a18084573e
+    layerID: 17
+    mosaicPosition: {x: 7404, y: 3148}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: head of monster on wall
+    spriteName: head of monster on wall
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 04f504176feac444a9a51339b50adcd7
+    layerID: 15
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: entrance door
+    spriteName: entrance door
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 1c34eab6c95eed14babd2de9878df588
+    layerID: 47
+    mosaicPosition: {x: 4261, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: light from entrance door
+    spriteName: light from entrance door
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f6079bf385d39594784c3a8ef7db54a4
+    layerID: 13
+    mosaicPosition: {x: 4, y: 1278}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: floor tile main room
+    spriteName: floor tile main room
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ee28b080e234cef42abc004b435a6c7d
+    layerID: 9
+    mosaicPosition: {x: 3278, y: 2909}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: floor tile kitchen
+    spriteName: floor tile kitchen
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6edb27d90bedc114c858b4f884001ffb
+    layerID: 8
+    mosaicPosition: {x: 4261, y: 3221}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  rigPSDLayers:
+  - name: "\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B"
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 321dc0f9723337b41a72205745491bbc
+    layerID: 61
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: candle on table
+    spriteName: candle on table
+    isGroup: 0
+    parentIndex: 0
+    spriteID: befbf8142acdd954399456ef5a245ece
+    layerID: 60
+    mosaicPosition: {x: 4745, y: 3221}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: gramophone
+    spriteName: gramophone
+    isGroup: 0
+    parentIndex: 0
+    spriteID: a8800bdc0d6e136409ed2fb8b2901c2d
+    layerID: 59
+    mosaicPosition: {x: 6759, y: 2847}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: gramophone table
+    spriteName: gramophone table
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f6aa552f143689e489b6c4d83eab2ca5
+    layerID: 58
+    mosaicPosition: {x: 6412, y: 2847}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door to kitchen
+    spriteName: door to kitchen
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9e97db8331e51024ebfc9a7400c5e13a
+    layerID: 56
+    mosaicPosition: {x: 1850, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: strip of plinth to kitchen
+    spriteName: strip of plinth to kitchen
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e1b58dea393317141b06844868e20ee7
+    layerID: 54
+    mosaicPosition: {x: 2491, y: 3194}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: brewery machine
+    spriteName: brewery machine
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 1a3b2b59ea347d242a315b1090e62cfb
+    layerID: 53
+    mosaicPosition: {x: 1039, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: candles on wall 3
+    spriteName: candles on wall 3
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b82a4025f7fe32f4ca87b828e73e802f
+    layerID: 51
+    mosaicPosition: {x: 7721, y: 3148}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: candles on wall 2
+    spriteName: candles on wall 2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 1e8cbbdc3e6a7504db2d7c6bdfb3233a
+    layerID: 49
+    mosaicPosition: {x: 3016, y: 3194}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: candles on wall 1
+    spriteName: candles on wall 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 88bd8c1c89e76c74e888cfd753a2a75f
+    layerID: 27
+    mosaicPosition: {x: 7072, y: 2847}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: banner
+    spriteName: banner
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9983b60f02f1bac4abac53d36dbc5645
+    layerID: 46
+    mosaicPosition: {x: 7197, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: things in shelf in the kitchen
+    spriteName: things in shelf in the kitchen
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 6b212129c914c07479b76acdb5a608e0
+    layerID: 42
+    mosaicPosition: {x: 5785, y: 3065}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: shelf in kitchen
+    spriteName: shelf in kitchen
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e7b4f0f837f872a4ea55fd456acbeb35
+    layerID: 41
+    mosaicPosition: {x: 6756, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: table in main room
+    spriteName: table in main room
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5eafef720fad7444cb32b686b37a8a60
+    layerID: 39
+    mosaicPosition: {x: 6786, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: counter
+    spriteName: counter
+    isGroup: 0
+    parentIndex: 0
+    spriteID: d055b9fff25e81e4b90c1b086de7d388
+    layerID: 37
+    mosaicPosition: {x: 3278, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: shelf near counter
+    spriteName: shelf near counter
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2ccc4ef018ec1024ea6ddba794b86c31
+    layerID: 35
+    mosaicPosition: {x: 4, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: grill
+    spriteName: grill
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e1cf44d87e4c3f045b7dc8ea0868b484
+    layerID: 33
+    mosaicPosition: {x: 5785, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: mixer
+    spriteName: mixer
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 91cfc122644e2bd4eac768ffe00b9074
+    layerID: 29
+    mosaicPosition: {x: 6412, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: barrel with bones
+    spriteName: barrel with bones
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 668fcfb54eba5da47916cf4d34efd2bf
+    layerID: 25
+    mosaicPosition: {x: 7890, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: kitchen table 3
+    spriteName: kitchen table 3
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ad75d9aa47bdf064386663dc8a1a2b9e
+    layerID: 44
+    mosaicPosition: {x: 7072, y: 3148}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: kitchen table 2
+    spriteName: kitchen table 2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: bef8050c66736b245a97c419f91cb57c
+    layerID: 31
+    mosaicPosition: {x: 4896, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: kitchen table 1
+    spriteName: kitchen table 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 63894d42dd146c04db4be5931c23f6d5
+    layerID: 23
+    mosaicPosition: {x: 4896, y: 2884}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: barrel with carrot
+    spriteName: barrel with carrot
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 58c565d9edd480c41916ec68d3d86adc
+    layerID: 21
+    mosaicPosition: {x: 7541, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: wine shelf main room
+    spriteName: wine shelf main room
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 76e1926c6c0ded342bbfd0607cda9d97
+    layerID: 19
+    mosaicPosition: {x: 2491, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: darts
+    spriteName: darts
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 832efa0bdfc9a594db340c04e42101fd
+    layerID: 17
+    mosaicPosition: {x: 7404, y: 3148}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: head of monster on wall
+    spriteName: head of monster on wall
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3a756d382e9cacc4dbbf7f6e0c2e5a9c
+    layerID: 15
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: entrance door
+    spriteName: entrance door
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 956f04a99fc76ca41934760319d1885a
+    layerID: 47
+    mosaicPosition: {x: 4261, y: 2226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: light from entrance door
+    spriteName: light from entrance door
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3fccd4c528ee9c9458eee2c7e60b3946
+    layerID: 13
+    mosaicPosition: {x: 4, y: 1278}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: floor tile main room
+    spriteName: floor tile main room
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 137b2891d4da7af42bc8313bfd41d55b
+    layerID: 9
+    mosaicPosition: {x: 3278, y: 2909}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: floor tile kitchen
+    spriteName: floor tile kitchen
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ac4b36a3232d109408d327781539a71d
+    layerID: 8
+    mosaicPosition: {x: 4261, y: 3221}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
