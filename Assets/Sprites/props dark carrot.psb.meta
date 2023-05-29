@@ -644,8 +644,8 @@ ScriptedImporter:
     spritePosition: {x: 1669, y: 1282}
   - name: entrance door
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.13683167, y: 0.044504587}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
