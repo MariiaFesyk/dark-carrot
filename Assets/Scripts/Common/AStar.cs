@@ -30,11 +30,13 @@ public class AStar {
     private IGrid2D grid;
     private List<CellNode2D> queue = new();
     private Dictionary<Vector2Int, CellNode2D> visited = new();
-    private Vector2Int target;
     public AStar(IGrid2D grid){
         this.grid = grid;
     }
     public Vector2Int[] Search(Vector2Int origin, Vector2Int target){
+        queue.Clear();
+        visited.Clear();
+
         CellNode2D closest = new CellNode2D(origin);
         closest.heuristic = heuristic.Invoke(closest.position, target);
         queue.Add(closest);

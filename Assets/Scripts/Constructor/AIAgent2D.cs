@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AIAgent2D : MonoBehaviour {
     [SerializeField] public float movementSpeed;
     [SerializeField] public float stoppingDistance = 0f;
 
     public bool IsMoving => stepIndex != -1;
+    public event UnityAction OnFinished;
 
     private int stepIndex = -1;
     private Grid grid;
@@ -25,7 +27,10 @@ public class AIAgent2D : MonoBehaviour {
         float distance = Vector2.Distance(transform.position, position);
         if(distance <= stoppingDistance){
             stepIndex++;
-            if(stepIndex >= path.Length) stepIndex = -1;
+            if(stepIndex >= path.Length){
+                stepIndex = -1;
+                OnFinished?.Invoke();
+            }
         }else{
             float movement = Mathf.Clamp01((movementSpeed * Time.deltaTime) / distance);
             transform.position = Vector3.Lerp(transform.position, position, movement);

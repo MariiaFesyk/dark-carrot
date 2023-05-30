@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class VisitorQueue : MonoBehaviour {
     [SerializeField] private GameObject[] visitors;
-    [SerializeField] private Transform doorLocation;
+    [SerializeField] public Transform doorLocation;
     [SerializeField] private WorldState state;
     [SerializeField] private GameObject layer;
     private List<Visitor> activeVisitors = new();
@@ -23,6 +23,8 @@ public class VisitorQueue : MonoBehaviour {
         }else if(phase != WorldState.WorldPhase.Working && coroutine != null){
             StopCoroutine(coroutine);
             coroutine = null;
+            foreach(var visitor in activeVisitors)
+                visitor.Leave();
         }
     }
     private IEnumerator SpawnVisitorsCoroutine(){
@@ -34,7 +36,7 @@ public class VisitorQueue : MonoBehaviour {
             GameObject prefab = visitors[Random.Range(0, visitors.Length)];
 
             //TODO remove linq
-            var tables = FindObjectsOfType<WayPoint>().Where(table => table.IsEmpty).ToArray();
+            var tables = FindObjectsOfType<WayPoint>().Where(table => table.IsEmpty && table.Contains("seat")).ToArray();
             if(tables.Length == 0) continue;
             var table = tables[Random.Range(0, tables.Length)];
 

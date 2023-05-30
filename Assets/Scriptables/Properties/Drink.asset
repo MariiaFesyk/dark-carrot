@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82d3aab3c495bd3418f9ef7bade49bc2, type: 3}
-  m_Name: DefaultState
+  m_Script: {fileID: 11500000, guid: c31b5e1e85c3ae74fa5b82aa88b5fdf7, type: 3}
+  m_Name: Drink
   m_EditorClassIdentifier: 
-  <WorkingPhaseDuration>k__BackingField: 10
+  <Name>k__BackingField: Drink
+  <Icon>k__BackingField: {fileID: 0}

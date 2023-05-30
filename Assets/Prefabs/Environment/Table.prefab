@@ -205,3 +205,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93878695fb461ba4283f6faa6576a814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tags:
+  - seat
