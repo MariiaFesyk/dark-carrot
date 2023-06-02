@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ItemHolder : MonoBehaviour {
     [SerializeField] private Item item = null;
+    [SerializeField] private uint quantity;
     [SerializeField] private GameObject iconDisplay = null;
     [SerializeField] private Animator animator = null;
 

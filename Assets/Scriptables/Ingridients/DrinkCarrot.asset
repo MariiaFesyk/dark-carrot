@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bfd423ab98701843931b12b8aa9ef24, type: 3}
+  m_Name: DrinkCarrot
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Carrot Juice
+  <Icon>k__BackingField: {fileID: -2902455067813660061, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  <Tags>k__BackingField: []

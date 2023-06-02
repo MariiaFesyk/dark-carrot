@@ -16,7 +16,8 @@ public abstract class Interactable : MonoBehaviour {
     }
 
     public void SetHighlight(bool highlight){
-        transform.SetLayer(highlight ? layer : 0);
+        if(highlight) transform.MoveLayer(0, layer);
+        else transform.MoveLayer(layer, 0);
     }
 
     public abstract bool CanInteract(InteractionController interacting);

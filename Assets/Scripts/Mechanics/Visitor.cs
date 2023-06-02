@@ -34,6 +34,7 @@ public class Visitor : Interactable {
         agent.OnFinished += GenerateOrder;
     }
     public void Leave(){
+        if(target == null) return;
         SetCoroutine(null);
 
         var queue = FindObjectOfType<VisitorQueue>();

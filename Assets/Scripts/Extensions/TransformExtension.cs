@@ -1,8 +1,9 @@
 using UnityEngine;
 
 public static class TransformExtension {
-    public static void SetLayer(this Transform transform, int layer){
-         transform.gameObject.layer = layer;
-         foreach(Transform child in transform) child.SetLayer(layer);
+    public static void MoveLayer(this Transform transform, int originLayer, int targetLayer){
+        if(transform.gameObject.layer == originLayer)
+            transform.gameObject.layer = targetLayer;
+        foreach(Transform child in transform) child.MoveLayer(originLayer, targetLayer);
     }
 }
