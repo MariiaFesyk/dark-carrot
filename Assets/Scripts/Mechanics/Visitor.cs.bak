@@ -94,8 +94,8 @@ public class Visitor : Interactable {
         if(item == null) return false;
         //TODO check type
 		
-		foreach(var tag in order.tags)
-			if(System.Array.IndexOf(item.Tags, tag) == -1) return false;
+		foreach(var require in order.tags)
+			if(!item.Tags.Exists(tag => tag == require)) return false;
 		
         return true;
     }

@@ -24,7 +24,7 @@ public class ItemHolder : MonoBehaviour {
 		
 		var variantTag = item?.VariantTag;
 		
-		if(tagIconDisplay != null) SetImage(tagIconDisplay, variantTag?.Icon);
+		SetImage(tagIconDisplay, variantTag?.Icon);
 
         if(animator != null) animator.SetBool("Carrying", !isEmpty());
     }

@@ -6,7 +6,7 @@ public class Tag : ScriptableObject {
     public string Name { get; private set; }
 	
 	[field: SerializeField]
-    public bool isVariant { get; private set; }
+    public bool variant { get; private set; }
 
     [field: SerializeField]
     public Sprite Icon { get; private set; }

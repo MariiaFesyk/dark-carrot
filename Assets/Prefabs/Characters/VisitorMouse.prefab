@@ -86,13 +86,22 @@ MonoBehaviour:
   orders:
   - tags:
     - {fileID: 11400000, guid: 6492149f1bd22974f959db71c8eff535, type: 2}
-    duration: 4
+    duration: 25
   - tags:
     - {fileID: 11400000, guid: ade84d567bec84944ba57e0272597e53, type: 2}
-    duration: 4
+    duration: 25
   - tags:
     - {fileID: 11400000, guid: b9ee65f551630744497fe3dd3159a3dc, type: 2}
-    duration: 4
+    duration: 25
+  - tags:
+    - {fileID: 11400000, guid: e03af86cccc270f448e3d5b77e00b453, type: 2}
+    duration: 25
+  - tags:
+    - {fileID: 11400000, guid: 65c1455a4e2e2fb41a5229afce8e8178, type: 2}
+    duration: 25
+  - tags:
+    - {fileID: 11400000, guid: 64506ee593fc97c478eab63b8eafae6f, type: 2}
+    duration: 25
 --- !u!1 &653374748654626962
 GameObject:
   m_ObjectHideFlags: 0

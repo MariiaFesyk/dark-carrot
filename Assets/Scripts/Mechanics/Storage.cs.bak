@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Storage : Interactable {
     public override bool CanInteract(InteractionController interacting){
-		bool filled = GetComponent<ItemHolder>()?.isEmpty() == false;
+		bool filled = GetComponent<ItemHolder>()?.isEmpty() == true;
         //TODO item filter?
         return interacting.GetComponent<ItemHolder>()?.isEmpty() == false || filled;
     }

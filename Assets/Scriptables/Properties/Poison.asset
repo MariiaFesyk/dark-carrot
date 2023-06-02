@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Poison
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 
+  <isVariant>k__BackingField: 1
   <Icon>k__BackingField: {fileID: 7082164486842076243, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}

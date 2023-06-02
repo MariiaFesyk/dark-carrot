@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d3aab3c495bd3418f9ef7bade49bc2, type: 3}
   m_Name: ShiftPhase
   m_EditorClassIdentifier: 
-  <WorkingPhaseDuration>k__BackingField: 50
+  <WorkingPhaseDuration>k__BackingField: 100

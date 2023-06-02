@@ -30,8 +30,7 @@ public class CraftingDevice : Interactable {
                 if(!GetComponent<ItemHolder>().isEmpty()) return false;
 
                 var item = interacting.GetComponent<ItemHolder>()?.RetrieveItem(false);
-				return item != null;
-                //return recipes.Exists(recipe => recipe.input == item);
+                return recipes.Exists(recipe => recipe.input == item);
 
             case DeviceState.Finished:
                 return interacting.GetComponent<ItemHolder>()?.isEmpty() == true;
@@ -46,13 +45,8 @@ public class CraftingDevice : Interactable {
             GetComponent<ItemHolder>().InsertItem(item);
 
             var recipe = recipes.Find(recipe => recipe.input == item);
-			if(recipe == null){
-				GetComponent<ItemHolder>().InsertItem(placeholder);
-				state = DeviceState.Finished;
-			}else{
-				GetComponent<ItemHolder>().InsertItem(recipe.output);
-				StartCoroutine(CraftingCoroutine(recipe));	
-			}
+            GetComponent<ItemHolder>().InsertItem(recipe.output);
+            StartCoroutine(CraftingCoroutine(recipe));
         }else if(state == DeviceState.Finished){
             interacting.GetComponent<ItemHolder>().InsertItem(GetComponent<ItemHolder>().RetrieveItem(true));
             state = DeviceState.Idle;
