@@ -7,9 +7,12 @@ using UnityEngine.UI;
 public class Visitor : Interactable {
     [SerializeField] private ParticleSystem bubbleParticles;
     [SerializeField] private Image progressIndicator;
+    [SerializeField] private Image orderIcon;
+    [SerializeField] private Order[] orders;
 
     [System.Serializable]
     public class Order {
+        public Tag[] tags;
         public float duration;
     }
     [System.Serializable]
@@ -51,13 +54,14 @@ public class Visitor : Interactable {
 
     private void GenerateOrder(){
         agent.OnFinished -= GenerateOrder;
-        order = new Order(){
-            duration = 4f,
-        };
+        order = orders[Random.Range(0, orders.Length)];
         SetCoroutine(AwaitingOrderCoroutine(order));
     }
     IEnumerator AwaitingOrderCoroutine(Order order){
         try{
+            orderIcon.transform.parent.gameObject.SetActive(true);
+            orderIcon.sprite = order.tags[0]?.Icon;
+
             state = VisitorState.AwaitingOrder;
             progressIndicator.enabled = true;
 
@@ -69,6 +73,7 @@ public class Visitor : Interactable {
             }
             Leave();
         }finally{
+            orderIcon.transform.parent.gameObject.SetActive(false);
             progressIndicator.enabled = false;
         }
     }

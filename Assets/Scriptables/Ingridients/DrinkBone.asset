@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Bone Juice
   <Icon>k__BackingField: {fileID: 2646203830038831031, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
-  <Tags>k__BackingField: []
+  <Tags>k__BackingField:
+  - {fileID: 11400000, guid: 6492149f1bd22974f959db71c8eff535, type: 2}

@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Amanita Porige
   <Icon>k__BackingField: {fileID: 8414025837500727035, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
-  <Tags>k__BackingField: []
+  <Tags>k__BackingField:
+  - {fileID: 11400000, guid: b9ee65f551630744497fe3dd3159a3dc, type: 2}

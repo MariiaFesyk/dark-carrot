@@ -19,6 +19,7 @@ public class CraftingDevice : Interactable {
     }
 
     [SerializeField] private List<CraftingRecipe> recipes = new();
+    [SerializeField] private Item placeholder;
     [SerializeField] private Image progressIndicator;
     private DeviceState state = DeviceState.Idle;
     private float elapsedTime = 0f;

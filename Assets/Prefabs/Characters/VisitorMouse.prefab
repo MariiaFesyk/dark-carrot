@@ -82,6 +82,17 @@ MonoBehaviour:
   layer: 6
   bubbleParticles: {fileID: 653374749340581647}
   progressIndicator: {fileID: 3942036868718092321}
+  orderIcon: {fileID: 5166565180036162527}
+  orders:
+  - tags:
+    - {fileID: 11400000, guid: 6492149f1bd22974f959db71c8eff535, type: 2}
+    duration: 4
+  - tags:
+    - {fileID: 11400000, guid: ade84d567bec84944ba57e0272597e53, type: 2}
+    duration: 4
+  - tags:
+    - {fileID: 11400000, guid: b9ee65f551630744497fe3dd3159a3dc, type: 2}
+    duration: 4
 --- !u!1 &653374748654626962
 GameObject:
   m_ObjectHideFlags: 0
@@ -5146,7 +5157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9220749218582424570
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5321,7 +5332,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829363490361523457}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
