@@ -2,7 +2,7 @@ using UnityEngine;
 
 [DisallowMultipleComponent, RequireComponent(typeof(Collider2D))]
 public abstract class Interactable : MonoBehaviour {
-    [SerializeField] private int layer;
+    [SerializeField] private ObjectSet layerSet;
     
     private void OnTriggerEnter2D(Collider2D collider){
         if(!collider.CompareTag("Player")) return;
@@ -16,8 +16,11 @@ public abstract class Interactable : MonoBehaviour {
     }
 
     public void SetHighlight(bool highlight){
-        if(highlight) transform.MoveLayer(0, layer);
-        else transform.MoveLayer(layer, 0);
+        if(highlight) layerSet.Add(gameObject);
+        else layerSet.Remove(gameObject);
+    }
+    void OnDestroy(){
+        layerSet.Remove(gameObject);
     }
 
     public abstract bool CanInteract(InteractionController interacting);

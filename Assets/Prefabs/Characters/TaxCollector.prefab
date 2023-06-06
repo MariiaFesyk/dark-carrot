@@ -146,5 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e225a83ebda0d224eb7a8b44aa9eefc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 6
+  layerSet: {fileID: 11400000, guid: ac433738ced32324c8d79ae8961fb2dc, type: 2}
   state: {fileID: 11400000, guid: 037d74084aa8f9b41b3ee44bb300e428, type: 2}

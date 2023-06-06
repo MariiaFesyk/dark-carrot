@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f1de494e69cfd42a5888f6f89bbb7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 6
+  layerSet: {fileID: 11400000, guid: ac433738ced32324c8d79ae8961fb2dc, type: 2}
   recipes:
   - input: {fileID: 11400000, guid: f9fda9894606dbb4fa2edc1de89fe0a7, type: 2}
     output: {fileID: 11400000, guid: 41a3b34e72ae76d4db16d39efedea462, type: 2}

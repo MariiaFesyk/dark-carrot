@@ -80,7 +80,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 2b488439729865f41874719ca83b739b, type: 2}
+  quantity: 0
   iconDisplay: {fileID: 5537067610556521050}
+  tagIconDisplay: {fileID: 0}
   animator: {fileID: 0}
 --- !u!114 &7436217143115029503
 MonoBehaviour:
@@ -94,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bee0a63d611fd14bac3754f67638ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 6
+  layerSet: {fileID: 11400000, guid: ac433738ced32324c8d79ae8961fb2dc, type: 2}
 --- !u!1 &1277833949882124943
 GameObject:
   m_ObjectHideFlags: 0
