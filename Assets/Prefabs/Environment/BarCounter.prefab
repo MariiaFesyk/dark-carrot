@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 2966690819509951407}
   - component: {fileID: 1624831658885912072}
   m_Layer: 0
-  m_Name: Counter
+  m_Name: BarCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

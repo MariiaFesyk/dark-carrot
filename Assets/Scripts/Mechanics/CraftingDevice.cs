@@ -27,14 +27,14 @@ public class CraftingDevice : Interactable {
     public override bool CanInteract(InteractionController interacting){
         switch(state){
             case DeviceState.Idle: 
-                if(!GetComponent<ItemHolder>().isEmpty()) return false;
+                if(GetComponent<ItemHolder>().Quantity > 0) return false;
 
-                var item = interacting.GetComponent<ItemHolder>()?.RetrieveItem(false);
+                var item = interacting.GetComponent<ItemHolder>()?.Item;
 				return item != null;
                 //return recipes.Exists(recipe => recipe.input == item);
 
             case DeviceState.Finished:
-                return interacting.GetComponent<ItemHolder>()?.isEmpty() == true;
+                return interacting.GetComponent<ItemHolder>()?.Quantity == 0;
                 
             case DeviceState.Processing:
             default: return false;
@@ -42,7 +42,7 @@ public class CraftingDevice : Interactable {
     }
     public override void OnInteraction(InteractionController interacting){
         if(state == DeviceState.Idle){
-            var item = interacting.GetComponent<ItemHolder>().RetrieveItem(true);
+            var item = interacting.GetComponent<ItemHolder>().RetrieveItem();
             GetComponent<ItemHolder>().InsertItem(item);
 
             var recipe = recipes.Find(recipe => recipe.input == item);
@@ -54,7 +54,7 @@ public class CraftingDevice : Interactable {
 				StartCoroutine(CraftingCoroutine(recipe));	
 			}
         }else if(state == DeviceState.Finished){
-            interacting.GetComponent<ItemHolder>().InsertItem(GetComponent<ItemHolder>().RetrieveItem(true));
+            interacting.GetComponent<ItemHolder>().InsertItem(GetComponent<ItemHolder>().RetrieveItem());
             state = DeviceState.Idle;
         }
     }

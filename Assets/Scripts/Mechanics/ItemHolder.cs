@@ -1,46 +1,31 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ItemHolder : MonoBehaviour {
-    [SerializeField] private Item item = null;
-    [SerializeField] private uint quantity;
-    [SerializeField] private GameObject iconDisplay = null;
-	[SerializeField] private GameObject tagIconDisplay = null;
+    [SerializeField] private int capacity;
+    [SerializeField] private ItemDisplay display;
     [SerializeField] private Animator animator = null;
+
+    [SerializeField] private Item item = null;
+    [SerializeField] private uint quantity = 0;
+
+    public Item Item => item;
+    public uint Quantity => quantity;
+    public int Capacity => capacity;
 	
-	private void SetImage(GameObject target, Sprite icon){
-		var spriteRenderer = target?.GetComponent<SpriteRenderer>();
-        if(spriteRenderer != null) spriteRenderer.sprite = icon;
-
-        var imageRenderer = target?.GetComponent<Image>();
-        if(imageRenderer != null){
-            imageRenderer.sprite = icon;
-            imageRenderer.enabled = icon != null;
-        }
-	}
-
     private void UpdateDisplay(){
-        SetImage(iconDisplay, item?.Icon);
-		
-		var variantTag = item?.VariantTag;
-		
-		if(tagIconDisplay != null) SetImage(tagIconDisplay, variantTag?.Icon);
-
-        if(animator != null) animator.SetBool("Carrying", !isEmpty());
-    }
-    public bool isEmpty(){
-        return item == null;
+        display.UpdateDisplay(item, quantity);
+        if(animator != null) animator.SetBool("Carrying", Quantity > 0);
     }
     public void InsertItem(Item nextItem){
+        if(nextItem != null && (item == nextItem || item == null)) quantity++;
         item = nextItem;
         UpdateDisplay();
     }
-    public Item RetrieveItem(bool remove){
+    public Item RetrieveItem(){
         Item prevItem = item;
-        if(remove){
-            item = null;
-            UpdateDisplay();
-        }
+        if(item != null) quantity--;
+        if(quantity <= 0) item = null;
+        UpdateDisplay();
         return prevItem;
     }
 #if UNITY_EDITOR

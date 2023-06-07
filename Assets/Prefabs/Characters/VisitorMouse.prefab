@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907034845de843442aad304e5f47130e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 6
+  layerSet: {fileID: 0}
   bubbleParticles: {fileID: 653374749340581647}
   progressIndicator: {fileID: 3942036868718092321}
   orderIcon: {fileID: 5166565180036162527}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 459543056796885083}
   - component: {fileID: 4582548143474163376}
   m_Layer: 0
-  m_Name: Table
+  m_Name: BarTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

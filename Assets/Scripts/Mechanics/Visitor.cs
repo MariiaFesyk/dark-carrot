@@ -90,7 +90,7 @@ public class Visitor : Interactable {
 
     public override bool CanInteract(InteractionController interacting){
         if(state != VisitorState.AwaitingOrder) return false;
-        var item = interacting.GetComponent<ItemHolder>()?.RetrieveItem(false);
+        var item = interacting.GetComponent<ItemHolder>()?.Item;
         if(item == null) return false;
         //TODO check type
 		
@@ -101,7 +101,7 @@ public class Visitor : Interactable {
     }
 
     public override void OnInteraction(InteractionController interacting){
-        var item = interacting.GetComponent<ItemHolder>().RetrieveItem(true);
+        var item = interacting.GetComponent<ItemHolder>().RetrieveItem();
         SetCoroutine(ConsumingCoroutine());
     }
 
