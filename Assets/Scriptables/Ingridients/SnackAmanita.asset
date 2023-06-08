@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Amanita Snack
   <Icon>k__BackingField: {fileID: -5623440294759403538, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  cost: 2
   <Tags>k__BackingField:
   - {fileID: 11400000, guid: ade84d567bec84944ba57e0272597e53, type: 2}
   - {fileID: 11400000, guid: 64506ee593fc97c478eab63b8eafae6f, type: 2}

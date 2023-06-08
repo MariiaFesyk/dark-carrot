@@ -6,6 +6,8 @@ public class Item : ScriptableObject {
 
     [field: SerializeField] public Sprite Icon { get; private set; }
 
+	[field: SerializeField] public int cost;
+
     [field: SerializeField] public Tag[] Tags { get; private set; }
 	
 	public Tag VariantTag {

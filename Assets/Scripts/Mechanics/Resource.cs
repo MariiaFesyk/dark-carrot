@@ -8,12 +8,18 @@ public class Resource : ScriptableObject {
 
     public event UnityAction OnChange;
 
+    void OnEnable(){
+        _amount = 0;
+    }
+
     private int _amount = 0;
     public int Amount {
         get => _amount;
         set {
-            _amount = value;
-            OnChange?.Invoke();
+            if(_amount != value){
+                _amount = value;
+                OnChange?.Invoke();
+            }
         }
     }
 }

@@ -1818,6 +1818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visitors:
+  - {fileID: 653374747554946605, guid: b33e570bc2021314e8c60e6af4f65072, type: 3}
   - {fileID: 653374747554946605, guid: 39eec999bc4e51645997e7c84582d347, type: 3}
   doorLocation: {fileID: 5742354366518475573}
   state: {fileID: 11400000, guid: 037d74084aa8f9b41b3ee44bb300e428, type: 2}

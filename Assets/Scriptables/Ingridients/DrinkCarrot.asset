@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Carrot Juice
   <Icon>k__BackingField: {fileID: -2902455067813660061, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  cost: 2
   <Tags>k__BackingField:
   - {fileID: 11400000, guid: 6492149f1bd22974f959db71c8eff535, type: 2}
   - {fileID: 11400000, guid: e03af86cccc270f448e3d5b77e00b453, type: 2}

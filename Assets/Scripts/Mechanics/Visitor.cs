@@ -9,6 +9,7 @@ public class Visitor : Interactable {
     [SerializeField] private Image progressIndicator;
     [SerializeField] private Image orderIcon;
     [SerializeField] private Order[] orders;
+    [SerializeField] private Resource coins;
 
     [System.Serializable]
     public class Order {
@@ -102,6 +103,9 @@ public class Visitor : Interactable {
 
     public override void OnInteraction(InteractionController interacting){
         var item = interacting.GetComponent<ItemHolder>().RetrieveItem();
+        //TODO should multiple awards be kept in item/order/character config?
+        int award = item.cost;
+        coins.Amount += award;
         SetCoroutine(ConsumingCoroutine());
     }
 

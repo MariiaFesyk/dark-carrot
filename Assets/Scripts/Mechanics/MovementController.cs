@@ -59,7 +59,7 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
     private bool pressed = false;
     public void OnTargetMove(InputAction.CallbackContext context){
         Vector2 target = context.ReadValue<Vector2>();
-        targetPosition = Camera.main.ScreenToWorldPoint(target);
+        if(Camera.main) targetPosition = Camera.main.ScreenToWorldPoint(target);
     }
     public void OnTargetTrigger(InputAction.CallbackContext context){
         if(context.performed) pressed = true;

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Bone Porige
   <Icon>k__BackingField: {fileID: 8109285937902493632, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  cost: 2
   <Tags>k__BackingField:
   - {fileID: 11400000, guid: b9ee65f551630744497fe3dd3159a3dc, type: 2}
   - {fileID: 11400000, guid: 65c1455a4e2e2fb41a5229afce8e8178, type: 2}

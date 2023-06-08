@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7845921218145295695}
   - component: {fileID: 653374747554946601}
   m_Layer: 0
-  m_Name: VisitorMouse
+  m_Name: Visitor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,7 +176,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 438991650699d7040abacf831e416db0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96533a4d46f5c914680c2d395ea0592b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
