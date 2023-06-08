@@ -16,7 +16,6 @@ public class WorldState : GameManager.AbstractWorldState {
     public float Elapsed => (float)(Time.timeAsDouble - startTime);
 
     public override IEnumerator Play(){
-        StartPhase(WorldPhase.Resting);
         while(true){
             switch(phase){
                 case WorldPhase.Working:
