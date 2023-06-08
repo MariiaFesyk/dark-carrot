@@ -19,6 +19,11 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
     }
 
     void FixedUpdate(){
+        if(pressed){
+            direction = Vector2.ClampMagnitude(targetPosition - (Vector2) transform.position, 1.0f);
+            if(direction.sqrMagnitude < 1e-3) direction = Vector2.zero;
+        }
+
         bool stopping = direction.sqrMagnitude == 0f;
 
         transition = stopping
@@ -48,4 +53,19 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
         direction = context.ReadValue<Vector2>();
     }
     public void OnInteract(InputAction.CallbackContext context){}
+
+
+    private Vector2 targetPosition;
+    private bool pressed = false;
+    public void OnTargetMove(InputAction.CallbackContext context){
+        Vector2 target = context.ReadValue<Vector2>();
+        targetPosition = Camera.main.ScreenToWorldPoint(target);
+    }
+    public void OnTargetTrigger(InputAction.CallbackContext context){
+        if(context.performed) pressed = true;
+        if(context.canceled){
+            pressed = false;
+            direction = Vector2.zero;
+        }
+    }
 }

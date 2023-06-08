@@ -44,6 +44,24 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TargetMove"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""8d1b8284-284c-4d19-a1bb-fa5c3e3dcd04"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""TargetTrigger"",
+                    ""type"": ""Value"",
+                    ""id"": ""4cf165e2-711a-4324-af68-062c019aaf11"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -198,6 +216,39 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""63831c76-a195-462b-a211-8407e24b1873"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2dfa2ff9-55ca-45c0-9613-eb092078ea13"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""TargetMove"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""590ec5f6-8d41-48ae-93a4-1d1dbcf5609e"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""TargetTrigger"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -787,6 +838,8 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        m_Player_TargetMove = m_Player.FindAction("TargetMove", throwIfNotFound: true);
+        m_Player_TargetTrigger = m_Player.FindAction("TargetTrigger", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -862,12 +915,16 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Interact;
+    private readonly InputAction m_Player_TargetMove;
+    private readonly InputAction m_Player_TargetTrigger;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
         public PlayerActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
+        public InputAction @TargetMove => m_Wrapper.m_Player_TargetMove;
+        public InputAction @TargetTrigger => m_Wrapper.m_Player_TargetTrigger;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -883,6 +940,12 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @TargetMove.started += instance.OnTargetMove;
+            @TargetMove.performed += instance.OnTargetMove;
+            @TargetMove.canceled += instance.OnTargetMove;
+            @TargetTrigger.started += instance.OnTargetTrigger;
+            @TargetTrigger.performed += instance.OnTargetTrigger;
+            @TargetTrigger.canceled += instance.OnTargetTrigger;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -893,6 +956,12 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @TargetMove.started -= instance.OnTargetMove;
+            @TargetMove.performed -= instance.OnTargetMove;
+            @TargetMove.canceled -= instance.OnTargetMove;
+            @TargetTrigger.started -= instance.OnTargetTrigger;
+            @TargetTrigger.performed -= instance.OnTargetTrigger;
+            @TargetTrigger.canceled -= instance.OnTargetTrigger;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1077,6 +1146,8 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnTargetMove(InputAction.CallbackContext context);
+        void OnTargetTrigger(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

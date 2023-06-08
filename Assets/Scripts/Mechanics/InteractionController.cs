@@ -43,4 +43,7 @@ public class InteractionController : MonoBehaviour, InputActions.IPlayerActions 
         selected.OnInteraction(this);
         ReselectInteractable();
     }
+
+    public void OnTargetMove(InputAction.CallbackContext context){}
+    public void OnTargetTrigger(InputAction.CallbackContext context){}
 }
