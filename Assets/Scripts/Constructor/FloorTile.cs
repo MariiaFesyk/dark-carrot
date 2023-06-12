@@ -11,10 +11,10 @@ public class FloorTile : Tile {
     [Header("Tiling")]
     [SerializeField] public Vector2Int size = Vector2Int.one;
     [SerializeField] public Vector2 tileSize = Vector2.one;
-    private Sprite[] sliced = new Sprite[0];
+    private Sprite[] sliced;
 
     void OnEnable(){
-        sliced = SliceSprite(sprite, (Vector2Int) size);
+        sliced = sprite ? SliceSprite(sprite, (Vector2Int) size) : null;
     }
 
     public override void RefreshTile(Vector3Int position, ITilemap tilemap){
@@ -32,7 +32,7 @@ public class FloorTile : Tile {
         if(y < 0) y = y + size.y;
 
         int index = x + y * size.x;
-        return index < sliced.Length ? sliced[index] : null;
+        return sliced != null && index < sliced.Length ? sliced[index] : null;
     }
     private Sprite[] SliceSprite(Sprite sprite, Vector2Int size){
         var indices = new NativeArray<ushort>(new ushort[6]{0,1,2,2,1,3}, Allocator.Temp);
@@ -89,7 +89,7 @@ public class FloorTile : Tile {
 
 #if UNITY_EDITOR
     void OnValidate(){
-        sliced = SliceSprite(sprite, (Vector2Int) size);
+        sliced = sprite ? SliceSprite(sprite, (Vector2Int) size) : null;
     }
 
     [MenuItem("Assets/Create/2D/Tiles/FloorTile")]
