@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CleverCrow.Fluid.Databases;
+using CleverCrow.Fluid.Dialogues.Graphs;
+using CleverCrow.Fluid.Dialogues;
 
 [RequireComponent(typeof(AIAgent2D))]
 public class Visitor : Interactable {
@@ -10,6 +13,8 @@ public class Visitor : Interactable {
     [SerializeField] private Image orderIcon;
     [SerializeField] private Order[] orders;
     [SerializeField] private Resource coins;
+
+    [SerializeField] public DialogueGraph dialogue;
 
     [System.Serializable]
     public class Order {
@@ -68,7 +73,7 @@ public class Visitor : Interactable {
 
             elapsedTime = 0f;
             while(elapsedTime < order.duration && order != null){
-                elapsedTime += Time.deltaTime;
+                elapsedTime += WorldState.instance.globalTimeScale * Time.deltaTime;
                 progressIndicator.fillAmount = Mathf.Min(1f, elapsedTime / order.duration);
                 yield return null;
             }
@@ -106,7 +111,21 @@ public class Visitor : Interactable {
         //TODO should multiple awards be kept in item/order/character config?
         int award = item.cost;
         coins.Amount += award;
-        SetCoroutine(ConsumingCoroutine());
+
+        if(dialogue){
+            SetCoroutine(null);
+            var dialogueDisplay = FindObjectOfType<DialogueDisplay>(true);
+            dialogueDisplay.OnDialogEnd.AddListener(OnDialogEnd);
+            dialogueDisplay.OpenDialogue(dialogue);
+        }else{
+            SetCoroutine(ConsumingCoroutine());
+        }
+    }
+    void OnDialogEnd(){
+        var dialogueDisplay = FindObjectOfType<DialogueDisplay>(true);
+        dialogueDisplay.OnDialogEnd.RemoveListener(OnDialogEnd);
+
+        GenerateOrder();
     }
 
     private IEnumerator coroutine;

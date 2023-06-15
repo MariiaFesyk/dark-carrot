@@ -9,15 +9,18 @@ public class WorldState : GameManager.AbstractWorldState {
     public enum WorldPhase {
         Working, Resting,
     }
+    public float globalTimeScale;
     private WorldPhase phase = WorldPhase.Resting;
-    private double startTime = 0.0;
+    private double elapsed = 0.0;
 
     public WorldPhase Phase => phase;
-    public float Elapsed => (float)(Time.timeAsDouble - startTime);
+    public float Elapsed => (float) elapsed;
 
     public override IEnumerator Play(){
         phase = WorldPhase.Resting;
+        globalTimeScale = 1.0f;
         while(true){
+            elapsed += globalTimeScale * Time.deltaTime;
             switch(phase){
                 case WorldPhase.Working:
                     if(Elapsed >= WorkingPhaseDuration) StartPhase(WorldPhase.Resting);
@@ -36,6 +39,11 @@ public class WorldState : GameManager.AbstractWorldState {
     public void StartPhase(WorldPhase nextPhase){
         OnPhaseTransition?.Invoke(nextPhase);
         phase = nextPhase;
-        startTime = Time.timeAsDouble;
+        elapsed = 0.0;
     }
+
+    //TODO remove
+    public static WorldState instance;
+    void Awake(){ WorldState.instance = this; }
+    void OnEnable(){ WorldState.instance = this; }
 }

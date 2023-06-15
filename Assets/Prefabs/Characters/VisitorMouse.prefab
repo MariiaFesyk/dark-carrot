@@ -103,6 +103,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 64506ee593fc97c478eab63b8eafae6f, type: 2}
     duration: 25
   coins: {fileID: 11400000, guid: 9ae9b3f7466e1134c8585bee9e630876, type: 2}
+  dialogue: {fileID: 11400000, guid: 5cbffe8a7c74b054997877555d8dc9b1, type: 2}
 --- !u!1 &653374748654626962
 GameObject:
   m_ObjectHideFlags: 0
