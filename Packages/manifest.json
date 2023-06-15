@@ -1,5 +1,15 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "NPM",
+      "url": "https://registry.npmjs.org",
+      "scopes": [
+        "com.fluid"
+      ]
+    }
+  ],
   "dependencies": {
+    "com.fluid.dialogue": "2.6.0",
     "com.unity.2d.animation": "7.0.10",
     "com.unity.2d.psdimporter": "6.0.7",
     "com.unity.2d.sprite": "1.0.0",
