@@ -13,7 +13,8 @@ using TMPro;
 public class DialogueDisplay : MonoBehaviour {
     [SerializeField] private WorldState state;
     [SerializeField] private PlayerInput inputSystem;
-
+    [SerializeField] private float typingSpeed;
+	
     private DialogueController dialogueController;
     public GameObjectOverride[] gameObjectOverrides;
     public DialogueGraph dialogue;
@@ -55,6 +56,7 @@ public class DialogueDisplay : MonoBehaviour {
     public void OpenDialogue(DialogueGraph dialogue){
         gameObject.SetActive(true);
         state.globalTimeScale = 0f;
+		state.elapsed += 10;
         inputSystem.actions.FindActionMap("Player").Disable();
         
         this.dialogue = dialogue;
@@ -66,7 +68,7 @@ public class DialogueDisplay : MonoBehaviour {
         lines.text = $"{actor}: ";
         foreach (char character in text.ToCharArray()){
             lines.text += character;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(typingSpeed);
         }
         if(autoprogress){
             while (!Input.GetMouseButtonDown(0)) {

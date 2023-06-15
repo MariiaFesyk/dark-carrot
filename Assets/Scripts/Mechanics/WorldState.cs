@@ -11,7 +11,7 @@ public class WorldState : GameManager.AbstractWorldState {
     }
     public float globalTimeScale;
     private WorldPhase phase = WorldPhase.Resting;
-    private double elapsed = 0.0;
+    public double elapsed = 0.0;
 
     public WorldPhase Phase => phase;
     public float Elapsed => (float) elapsed;
