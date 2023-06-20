@@ -15,12 +15,12 @@ public abstract class Interactable : MonoBehaviour {
         interacting?.OnInteractableExit(this);
     }
 
-    public void SetHighlight(bool highlight){
-        if(highlight) layerSet.Add(gameObject);
-        else layerSet.Remove(gameObject);
+    public virtual void SetHighlight(bool highlight){
+        if(highlight) layerSet?.Add(gameObject);
+        else layerSet?.Remove(gameObject);
     }
-    void OnDestroy(){
-        layerSet.Remove(gameObject);
+    protected virtual void OnDestroy(){
+        layerSet?.Remove(gameObject);
     }
 
     public abstract bool CanInteract(InteractionController interacting);

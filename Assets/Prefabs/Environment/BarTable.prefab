@@ -172,6 +172,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5790856281808953058}
   - component: {fileID: 2439025022713543618}
+  - component: {fileID: 8231816920843368009}
+  - component: {fileID: 1862004458042084339}
   m_Layer: 0
   m_Name: Seat
   m_TagString: Untagged
@@ -208,6 +210,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tags:
   - seat
+--- !u!58 &8231816920843368009
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843797355065304114}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5, y: 0.5}
+  serializedVersion: 2
+  m_Radius: 1
+--- !u!114 &1862004458042084339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843797355065304114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf5f710a20b4cd46b5f5e86c083e681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerSet: {fileID: 11400000, guid: ac433738ced32324c8d79ae8961fb2dc, type: 2}
 --- !u!1 &5925415568001325323
 GameObject:
   m_ObjectHideFlags: 0
