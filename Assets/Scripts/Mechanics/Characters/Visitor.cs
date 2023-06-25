@@ -11,46 +11,58 @@ public class Visitor : Interactable {
     [SerializeField] private ParticleSystem bubbleParticles;
     [SerializeField] private Image progressIndicator;
     [SerializeField] private Image orderIcon;
-    [SerializeField] private Order[] orders;
-    [SerializeField] private Resource coins;
 
+    [System.Serializable]
+    public class Schedule {
+
+    }
+
+    [SerializeField] private Schedule schedule;
+
+    [SerializeField] private VisitorOrder[] orders;
     [SerializeField] public DialogueGraph dialogue;
 
     [System.Serializable]
-    public class Order {
-        public Tag[] tags;
-        public float duration;
-    }
-    [System.Serializable]
-    public enum VisitorState {
-        Idle, Arriving, Leaving, AwaitingOrder, Consuming,
+    public enum VisitorState { //TODO use state machine library?
+        Idle, Arriving, Leaving, AwaitingOrder, Consuming, Storytelling,
     }
     private AIAgent2D agent;
-    private Order order;
+    private VisitorQueue queue;
+    private VisitorOrder order;
     private VisitorState state = VisitorState.Idle;
-    private WayPoint target = null;
+    private SeatSpot target = null;
     private float elapsedTime = 0f;
+    private int fulfilled = 0;
 
     void Awake(){
         agent = GetComponent<AIAgent2D>();
+        queue = FindObjectOfType<VisitorQueue>();
     }
 
-    public void Enter(WayPoint waypoint){
+    public void Enter(SeatSpot waypoint){
         state = VisitorState.Arriving;
         target = waypoint;
-        target.Reserve(gameObject);
+        target.Set(gameObject);
         agent.SetDestination(waypoint.transform.position);
         agent.OnFinished += GenerateOrder;
     }
+
+    public void OnWorkingPhaseEnd(){
+        if(state == VisitorState.Idle){
+            state = VisitorState.Storytelling;
+        }else{
+            Leave();
+        }
+    }
+
     public void Leave(){
         if(target == null) return;
         SetCoroutine(null);
 
-        var queue = FindObjectOfType<VisitorQueue>();
         order = null;
 
         state = VisitorState.Leaving;
-        target.Leave();
+        target.Set(null);
         target = null;
         agent.SetDestination(queue.doorLocation.position);
         agent.OnFinished += () => {
@@ -63,18 +75,20 @@ public class Visitor : Interactable {
         order = orders[Random.Range(0, orders.Length)];
         SetCoroutine(AwaitingOrderCoroutine(order));
     }
-    IEnumerator AwaitingOrderCoroutine(Order order){
+
+    IEnumerator AwaitingOrderCoroutine(VisitorOrder order){
         try{
             orderIcon.transform.parent.gameObject.SetActive(true);
-            orderIcon.sprite = order.tags[0]?.Icon;
+            orderIcon.sprite = order.Icon;
+            orderIcon.enabled = false;
 
             state = VisitorState.AwaitingOrder;
             progressIndicator.enabled = true;
 
             elapsedTime = 0f;
-            while(elapsedTime < order.duration && order != null){
-                elapsedTime += WorldState.instance.globalTimeScale * Time.deltaTime;
-                progressIndicator.fillAmount = Mathf.Min(1f, elapsedTime / order.duration);
+            while(elapsedTime < order.Duration && order != null){
+                elapsedTime += queue.phase.deltaTime;
+                progressIndicator.fillAmount = Mathf.Min(1f, elapsedTime / order.Duration);
                 yield return null;
             }
             Leave();
@@ -88,44 +102,52 @@ public class Visitor : Interactable {
             state = VisitorState.Consuming;
             bubbleParticles.Play();
             yield return new WaitForSeconds(5f);
-            Leave();
+
+            if(dialogue != null){
+                if(fulfilled < 3){
+                    GenerateOrder();
+                }else{
+                    state = VisitorState.Idle;
+                }
+            }else{
+                Leave();
+            }
         }finally{
             bubbleParticles.Stop();
         }
     }
 
+    public override void OnTriggerStay2D(Collider2D collider){
+        if(!collider.CompareTag("Player")) return;
+        if(state == VisitorState.AwaitingOrder){
+            orderIcon.enabled = true;
+        }
+    }
+
     public override bool CanInteract(InteractionController interacting){
-        if(state != VisitorState.AwaitingOrder) return false;
-        var item = interacting.GetComponent<ItemHolder>()?.Item;
-        if(item == null) return false;
-        //TODO check type
-		
-		foreach(var tag in order.tags)
-			if(System.Array.IndexOf(item.Tags, tag) == -1) return false;
-		
-        return true;
+        if(state == VisitorState.AwaitingOrder && order != null){
+            var item = interacting.GetComponent<ItemHolder>()?.Item;
+            return order.Validate(item);
+        }else if(state == VisitorState.Storytelling && dialogue != null){
+            return true;
+        }else return false;        
     }
 
     public override void OnInteraction(InteractionController interacting){
-        var item = interacting.GetComponent<ItemHolder>().RetrieveItem();
-        //TODO should multiple awards be kept in item/order/character config?
-        int award = item.cost;
-        coins.Amount += award;
+        if(state == VisitorState.AwaitingOrder){
+            var item = interacting.GetComponent<ItemHolder>().RetrieveItem();
 
-        if(dialogue){
+            order?.Fulfill(item, this);
+            order = null;
+            fulfilled++;
+
+            SetCoroutine(ConsumingCoroutine());
+        }else if(state == VisitorState.Storytelling){
             SetCoroutine(null);
             var dialogueDisplay = FindObjectOfType<DialogueDisplay>(true);
-            dialogueDisplay.OnDialogEnd.AddListener(OnDialogEnd);
+            dialogueDisplay.DialogCallback += Leave;
             dialogueDisplay.OpenDialogue(dialogue);
-        }else{
-            SetCoroutine(ConsumingCoroutine());
         }
-    }
-    void OnDialogEnd(){
-        var dialogueDisplay = FindObjectOfType<DialogueDisplay>(true);
-        dialogueDisplay.OnDialogEnd.RemoveListener(OnDialogEnd);
-
-        GenerateOrder();
     }
 
     private IEnumerator coroutine;

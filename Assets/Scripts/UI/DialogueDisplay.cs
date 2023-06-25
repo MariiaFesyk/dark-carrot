@@ -11,7 +11,6 @@ using UnityEngine.InputSystem;
 using TMPro;
 
 public class DialogueDisplay : MonoBehaviour {
-    [SerializeField] private WorldState state;
     [SerializeField] private PlayerInput inputSystem;
     [SerializeField] private float typingSpeed;
 	
@@ -24,7 +23,9 @@ public class DialogueDisplay : MonoBehaviour {
     [SerializeField] private RectTransform optionsList;
     [SerializeField] private DialogueOptionDisplay optionPrefab;
 
-    public UnityEvent OnDialogEnd = new UnityEvent();
+    public UnityEvent OnDialogOpened = new UnityEvent();
+    public UnityEvent OnDialogClosed = new UnityEvent();
+    [HideInInspector] public UnityAction DialogCallback;
 
     private void Awake(){
         var database = new DatabaseInstanceExtended();
@@ -43,24 +44,28 @@ public class DialogueDisplay : MonoBehaviour {
                 option.clickEvent.AddListener(dialogueController.SelectChoice);
             }
         });
-        dialogueController.Events.End.AddListener(() => {
-            gameObject.SetActive(false);
-            state.globalTimeScale = 1f;
-            inputSystem.actions.FindActionMap("Player").Enable();
-            OnDialogEnd.Invoke();
-        });
+        dialogueController.Events.End.AddListener(CloseDialogue);
         dialogueController.Events.NodeEnter.AddListener((node) => {
+
         });
+    }
+
+    private void CloseDialogue(){
+        gameObject.SetActive(false);
+        inputSystem.actions.FindActionMap("Player").Enable();
+
+        OnDialogClosed.Invoke();
+        DialogCallback?.Invoke();
+        DialogCallback = null;
     }
 
     public void OpenDialogue(DialogueGraph dialogue){
         gameObject.SetActive(true);
-        state.globalTimeScale = 0f;
-		state.elapsed += 10;
         inputSystem.actions.FindActionMap("Player").Disable();
         
         this.dialogue = dialogue;
 
+        OnDialogOpened.Invoke();
         dialogueController.Play(dialogue, gameObjectOverrides.ToArray<IGameObjectOverride>());
     }
 

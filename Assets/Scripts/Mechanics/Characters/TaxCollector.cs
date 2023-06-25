@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TaxCollector : Interactable {
-    [SerializeField] private WorldState state;
+    [SerializeField] private Phase phase;
 
     public override bool CanInteract(InteractionController interacting){
-        return state.Phase == WorldState.WorldPhase.Resting;
+        return phase.enabled;
     }
     public override void OnInteraction(InteractionController interacting){
-        state.StartPhase(WorldState.WorldPhase.Working);
+        phase.Exit();
     }
 }

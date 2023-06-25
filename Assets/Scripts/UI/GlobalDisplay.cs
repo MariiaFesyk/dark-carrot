@@ -1,20 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GlobalDisplay : MonoBehaviour {
     [SerializeField] private Image progressIndicator;
-    [SerializeField] private WorldState state;
+    [SerializeField] private Phase phase;
    
     void Start(){
         
     }
 
     void Update(){
-        if(state.Phase == WorldState.WorldPhase.Working){
+        if(phase.enabled){
             progressIndicator.enabled = true;
-            progressIndicator.fillAmount = Mathf.Clamp01(state.Elapsed / state.WorkingPhaseDuration);
+            progressIndicator.fillAmount = phase.percent;
         }else{
             progressIndicator.enabled = false;
         }

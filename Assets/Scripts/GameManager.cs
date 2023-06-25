@@ -13,12 +13,6 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public abstract class AbstractWorldState : ScriptableObject {
-        public abstract IEnumerator Play();
-    }
-
-    [field: SerializeField] public AbstractWorldState world;
     private void Start(){
-        StartCoroutine(world.Play());
     }
 }

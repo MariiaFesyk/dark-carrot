@@ -41,7 +41,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: f643b54b148ca9045b5f7a3557adb030, type: 2}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: You little dumb rat, I was joking, go away.
 --- !u!114 &-4428658125909713309
@@ -166,7 +166,7 @@ MonoBehaviour:
   exitActions: []
   choices:
   - {fileID: -4428658125909713309}
-  actor: {fileID: 11400000, guid: f643b54b148ca9045b5f7a3557adb030, type: 2}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Could you bring me some more food?
 --- !u!114 &-397884776617067503
@@ -209,7 +209,7 @@ MonoBehaviour:
   - {fileID: 226649039253554845}
   - {fileID: 5804991410437517792}
   root: {fileID: 1532999317496806401}
-  scrollPosition: {x: 50335.465, y: 50095.9}
+  scrollPosition: {x: 50003.465, y: 50052.9}
 --- !u!114 &226649039253554845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   choices:
   - {fileID: -2251918243600421063}
   - {fileID: -4404955087588049912}
-  actor: {fileID: 11400000, guid: f643b54b148ca9045b5f7a3557adb030, type: 2}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Are you ready to discuss shady business?
 --- !u!114 &1532999317496806401
@@ -309,7 +309,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: f643b54b148ca9045b5f7a3557adb030, type: 2}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Once I was a warrior but I got arrow in my knee.
 --- !u!114 &2706136742943837722
@@ -338,7 +338,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: -3054529135827465756}
   choices: []
-  actor: {fileID: 11400000, guid: f643b54b148ca9045b5f7a3557adb030, type: 2}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: We can disscuss it later, if you wish. I have some mindblowing stuff.
 --- !u!114 &2882519775046696422
@@ -385,7 +385,7 @@ MonoBehaviour:
   choices:
   - {fileID: 5270351970629491275}
   - {fileID: -2302638273681742264}
-  actor: {fileID: 11400000, guid: f643b54b148ca9045b5f7a3557adb030, type: 2}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Do you have some time to chat?
 --- !u!114 &5123321008799034219
@@ -431,7 +431,7 @@ MonoBehaviour:
   choices:
   - {fileID: 1787629583022708603}
   - {fileID: 5123321008799034219}
-  actor: {fileID: 11400000, guid: f643b54b148ca9045b5f7a3557adb030, type: 2}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Now Im a merchant and I sell different stuff to shady people. Do you
     like find something banned by the law? I can get it.
@@ -477,7 +477,7 @@ MonoBehaviour:
   exitActions: []
   choices:
   - {fileID: -397884776617067503}
-  actor: {fileID: 11400000, guid: f643b54b148ca9045b5f7a3557adb030, type: 2}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Well, I am not
 --- !u!114 &6640134401428776868
@@ -508,7 +508,7 @@ MonoBehaviour:
   choices:
   - {fileID: 7900422330110402728}
   - {fileID: -7848280371833518990}
-  actor: {fileID: 11400000, guid: f643b54b148ca9045b5f7a3557adb030, type: 2}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Hi tiny rabbit!
 --- !u!114 &7900422330110402728

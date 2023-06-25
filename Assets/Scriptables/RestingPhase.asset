@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82d3aab3c495bd3418f9ef7bade49bc2, type: 3}
-  m_Name: ShiftPhase
+  m_Script: {fileID: 11500000, guid: 56733887ef1aa5e43be3f7a0ed20233a, type: 3}
+  m_Name: RestingPhase
   m_EditorClassIdentifier: 
-  <WorkingPhaseDuration>k__BackingField: 100
+  title: Resting Phase
+  duration: 0
+  nextPhase: {fileID: 11400000, guid: 3cbb9821da4095147a5963004ec0eac7, type: 2}
+  enabled: 0
+  timeScale: 1

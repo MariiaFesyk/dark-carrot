@@ -14,6 +14,7 @@ public abstract class Interactable : MonoBehaviour {
         var interacting = collider.GetComponent<InteractionController>();
         interacting?.OnInteractableExit(this);
     }
+    public virtual void OnTriggerStay2D(Collider2D collider){}
 
     public virtual void SetHighlight(bool highlight){
         if(highlight) layerSet?.Add(gameObject);

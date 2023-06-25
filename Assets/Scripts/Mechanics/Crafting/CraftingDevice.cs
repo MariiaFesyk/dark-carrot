@@ -65,7 +65,7 @@ public class CraftingDevice : Interactable {
 
         elapsedTime = 0f;
         while(elapsedTime < recipe.duration){
-            elapsedTime += WorldState.instance.globalTimeScale * Time.deltaTime;
+            elapsedTime += Phase.last.deltaTime;
             progressIndicator.fillAmount = Mathf.Min(1f, elapsedTime / recipe.duration);
             yield return null;
         }

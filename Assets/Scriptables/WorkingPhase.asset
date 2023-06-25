@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e5a329bf67d3c744a7b66e217216f64, type: 3}
-  m_Name: Rabbit
+  m_Script: {fileID: 11500000, guid: 56733887ef1aa5e43be3f7a0ed20233a, type: 3}
+  m_Name: WorkingPhase
   m_EditorClassIdentifier: 
-  _displayName: Percival
-  _portrait: {fileID: 0}
+  title: Working Phase
+  duration: 100
+  nextPhase: {fileID: 11400000, guid: 391038554462ce44fa71e98d004fb9e1, type: 2}
+  enabled: 1
+  timeScale: 1

@@ -42,7 +42,7 @@ public class AStar {
         queue.Add(closest);
         visited.Add(closest.position, closest);
 
-        while(queue.Count > 0){
+        for(int limit = (origin - target).sqrMagnitude; queue.Count > 0 && limit > 0; limit--){
             int index = 0;
             float min = float.PositiveInfinity;
             for(int i = queue.Count - 1; i >= 0; i--)
