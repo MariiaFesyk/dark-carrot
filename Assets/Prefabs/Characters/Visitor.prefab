@@ -83,6 +83,7 @@ MonoBehaviour:
   bubbleParticles: {fileID: 653374749340581647}
   progressIndicator: {fileID: 3942036868718092321}
   orderIcon: {fileID: 5166565180036162527}
+  unknownOrderIcon: {fileID: 8052375171590066175, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
   orders:
   - {fileID: 11400000, guid: 085ec99fce5e8724ea5639cd95c19212, type: 2}
   - {fileID: 11400000, guid: d7b4dc621d3b4d54ca93bceb7daa54c3, type: 2}
@@ -90,7 +91,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c566f2396890a1d49a744d093c335323, type: 2}
   - {fileID: 11400000, guid: 43692e44328379f4482149332b581543, type: 2}
   - {fileID: 11400000, guid: 00f05012154a0104580e1dce7a4dd6ea, type: 2}
-  coins: {fileID: 11400000, guid: 9ae9b3f7466e1134c8585bee9e630876, type: 2}
   dialogue: {fileID: 0}
 --- !u!1 &653374748654626962
 GameObject:

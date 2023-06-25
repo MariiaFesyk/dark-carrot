@@ -1,10 +1,10 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 [RequireComponent(typeof(Tilemap))]
 public class ConstructionLayer : MonoBehaviour, AStar.IGrid2D {
+    [SerializeField] private Tilemap floor;
 
     protected Tilemap tilemap { get; private set; }
     private Dictionary<Vector3Int, Constructed> grid = new();
@@ -41,7 +41,8 @@ public class ConstructionLayer : MonoBehaviour, AStar.IGrid2D {
     public IEnumerable<Vector2Int> GetAdjacent(Vector2Int cell){
         foreach(var offset in adjacent){
             Vector2Int next = offset + cell;
-            if(grid.ContainsKey(new Vector3Int(next.x, next.y, 0))) continue;
+            if(grid.ContainsKey((Vector3Int) next)) continue;
+            if(floor?.HasTile((Vector3Int) next) == false) continue;
             yield return next;
         }
     }

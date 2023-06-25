@@ -11,10 +11,11 @@ public class Visitor : Interactable {
     [SerializeField] private ParticleSystem bubbleParticles;
     [SerializeField] private Image progressIndicator;
     [SerializeField] private Image orderIcon;
+    [SerializeField] private Sprite unknownOrderIcon;
 
     [System.Serializable]
     public class Schedule {
-
+        public bool[] mask;
     }
 
     [SerializeField] private Schedule schedule;
@@ -79,8 +80,8 @@ public class Visitor : Interactable {
     IEnumerator AwaitingOrderCoroutine(VisitorOrder order){
         try{
             orderIcon.transform.parent.gameObject.SetActive(true);
-            orderIcon.sprite = order.Icon;
-            orderIcon.enabled = false;
+            // orderIcon.sprite = order.Icon;
+            orderIcon.sprite = unknownOrderIcon;
 
             state = VisitorState.AwaitingOrder;
             progressIndicator.enabled = true;
@@ -117,10 +118,11 @@ public class Visitor : Interactable {
         }
     }
 
+    //TODO refactor, custom radius for autotriggering effects?
     public override void OnTriggerStay2D(Collider2D collider){
         if(!collider.CompareTag("Player")) return;
         if(state == VisitorState.AwaitingOrder){
-            orderIcon.enabled = true;
+            orderIcon.sprite = order.Icon;
         }
     }
 
