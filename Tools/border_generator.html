@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width,height=device-height,initial-scale=1.0,user-scalable=no'/>
+    <style>
+        canvas {
+            max-width: 100%;
+            max-height: 100%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div><label>Grid</label><input id="grid_show" type="checkbox"/><input id="grid_size_x" min="0" type="number"/><input id="grid_size_y" min="0" type="number"/></div>
+        <div><label>Line</label><input id="line_width" type="range" min="0" max="10" step="0.1"><input id="line_color" type="color"/></div>
+        <div><label>Border</label><input id="border_height" min="0" step="0.1" type="number"/><input id="border_half" type="range" min="0" max="1" step="0.05"/></div>
+        <div><label>Side</label><input id="border_color" type="color"/></div>
+    </div>
+    <div></div>
+    <canvas width="800" height="600"></canvas>
+
+
+    <script>
+        const canvas = document.querySelector('canvas')
+        const ctx = canvas.getContext('2d', { alpha: true })
+        const options = {
+            grid_show: true,
+            grid_size_x: 256,
+            grid_size_y: 128,
+
+            columns: 8, rows: 8,
+
+            line_color: '#000000', line_width: 8,
+            border_height: 1, border_half: 0.2, border_color: '#777777'
+        }
+        document.querySelectorAll('input').forEach(input => {
+            const property = input.type == 'checkbox' ? 'checked' : 'value'
+            input[property] = options[input.id]
+            input.addEventListener('input', event => {
+                options[input.id] = input.type == 'range' || input.type == 'number' ? +input[property] : input[property]
+                render()
+            })
+        })
+
+        const iso_cart = ([x, y]) => [
+            0.5 * (x + y),
+            0.5 * (x - y)
+        ]
+
+        function polyline(path, stroke, fill){
+            ctx.beginPath()
+            for(let i = 0; i < path.length; i++)
+                if(!i) ctx.moveTo(path[i][0] * options.grid_size_x, path[i][1] * options.grid_size_y)
+                else ctx.lineTo(path[i][0] * options.grid_size_x, path[i][1] * options.grid_size_y)
+            if(stroke){
+                ctx.lineWidth = stroke.width
+                ctx.strokeStyle = stroke.color
+                ctx.stroke()
+            }
+            if(fill){
+                ctx.closePath()
+                ctx.fillStyle = fill.color
+                ctx.fill()
+            }
+        }
+
+        function render(){
+            canvas.width = options.grid_size_x * options.columns
+            canvas.height = options.grid_size_y * options.rows
+
+            ctx.resetTransform()
+            ctx.clearRect(0, 0, canvas.width, canvas.height)
+            ctx.translate(0, 0.5 * options.grid_size_y * options.rows)
+            ctx.lineCap = 'round'
+            ctx.lineJoin = 'round'
+
+            if(options.grid_show){
+                for(let c = 0; c <= options.columns; c++)
+                    polyline([iso_cart([c, 0]), iso_cart([c, options.rows])], { color: '#000000', width: 1 })
+                for(let r = 0; r <= options.rows; r++)
+                    polyline([iso_cart([0, r]), iso_cart([options.columns, r])], { color: '#000000', width: 1 })
+            }
+
+            const half = options.border_half
+            const parts = [{
+                vertices: [[0,0], [0,1], [1,1], [half,0], [half,1-half], [1,1-half]],
+                corners: [4],
+                faces: [[0,1,2,5,4,3]],
+                edges: [0,3,4,5,2],
+                lines: [
+                    [0,1,2],
+                    [3,4,5]
+                ]
+            }, {
+                vertices: [[0,0], [0,1], [half,0], [half,1]],
+                corners: [],
+                faces: [[0,1,3,2]],
+                edges: [3,2,0],
+                lines: [
+                    [0,1],
+                    [2,3]
+                ]
+            }, {
+                vertices: [[0,1],[0,1-half],[1,1-half], [half,1],[1,1]],
+                corners: [1],
+                faces: [[0,1,2,4,3]],
+                edges: [1,2,4],
+                lines: [
+                    [0,1,2],
+                    [3,4]
+                ]
+            }, {
+                vertices: [[0,1-half],[half,1-half],[half,1],[0,1]],
+                corners: [1],
+                faces: [[0,1,2,3]],
+                edges: [0,1,2],
+                lines: [
+                    [0,1,2]
+                ]
+            }]
+
+            const queue = [
+                { part: parts[0], offset: [7,0], flip: false },
+                { part: parts[1], offset: [7,2], flip: false },
+                { part: parts[2], offset: [7,4], flip: false },
+                { part: parts[3], offset: [7,6], flip: false },
+
+                { part: parts[0], offset: [2,2], flip: false },
+                { part: parts[1], offset: [2,1], flip: false },
+                { part: parts[1], offset: [3,2], flip: true },
+                { part: parts[2], offset: [2,0], flip: false },
+                { part: parts[2], offset: [4,2], flip: true },
+                { part: parts[1], offset: [3,0], flip: true },
+                { part: parts[1], offset: [4,1], flip: false },
+                { part: parts[3], offset: [4,0], flip: false },
+
+                { part: parts[0], offset: [1,6], flip: false },
+                { part: parts[2], offset: [2,6], flip: true },
+                { part: parts[2], offset: [2,5], flip: false },
+                { part: parts[1], offset: [3,5], flip: true },
+                { part: parts[0], offset: [4,6], flip: false },
+                { part: parts[3], offset: [4,5], flip: false },
+                { part: parts[2], offset: [5,6], flip: true }
+
+            ]
+            for(let { part, offset, flip } of queue){
+                const vertices = part.vertices.map(([ x, y ]) => [
+                    (flip ? 1-y : x) + offset[0],
+                    (flip ? 1-x : y) + offset[1]
+                ]).map(iso_cart)
+                const vertices_top = vertices.map(([x, y]) => [
+                    x, y - options.border_height
+                ])
+
+                part.lines.forEach(line =>
+                    polyline(line.map(i => vertices[i]), { color: options.line_color, width: options.line_width }, null)
+                )
+
+                part.faces.forEach(face =>
+                    polyline(face.map(i => vertices_top[i]), null, { color: options.border_color })
+                )
+                polyline([
+                    ...part.edges.map(i => vertices[i]),
+                    ...part.edges.map(i => vertices_top[i]).reverse(),
+                ], null, { color: options.border_color })
+                polyline(part.edges.map(i => vertices[i]), { color: options.line_color, width: options.line_width }, null)
+
+                part.lines.forEach(line =>
+                    polyline(line.map(i => vertices_top[i]), { color: options.line_color, width: options.line_width }, null)
+                )
+
+                part.corners.forEach(corner =>
+                    polyline([
+                        vertices[corner], vertices_top[corner]
+                    ], { color: options.line_color, width: options.line_width }, null)
+                )
+            }
+        }
+        render()
+    </script>
+</body>
+</html>
