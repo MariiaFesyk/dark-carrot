@@ -148,3 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerSet: {fileID: 11400000, guid: ac433738ced32324c8d79ae8961fb2dc, type: 2}
   phase: {fileID: 11400000, guid: 391038554462ce44fa71e98d004fb9e1, type: 2}
+  collect: {fileID: 11400000, guid: 9ae9b3f7466e1134c8585bee9e630876, type: 2}
+  character: {fileID: 11400000, guid: ff0b37c8b6670474bb819aa418f8db23, type: 2}
+  dialogue: {fileID: 11400000, guid: 46c444460eed26d44832524de2e30ddb, type: 2}

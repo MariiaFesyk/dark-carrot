@@ -7,12 +7,15 @@ using UnityEngine.Events;
 using CleverCrow.Fluid.Databases;
 using CleverCrow.Fluid.Dialogues.Graphs;
 using CleverCrow.Fluid.Dialogues;
+using CleverCrow.Fluid.Dialogues.Actions;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class DialogueDisplay : MonoBehaviour {
     [SerializeField] private PlayerInput inputSystem;
     [SerializeField] private float typingSpeed;
+    [SerializeField] private ContractDisplay contractController;
 	
     private DialogueController dialogueController;
     public GameObjectOverride[] gameObjectOverrides;
@@ -32,10 +35,12 @@ public class DialogueDisplay : MonoBehaviour {
         dialogueController = new DialogueController(database);
 
         dialogueController.Events.Speak.AddListener((actor, text) => {
+            if(actor == null) return;
             foreach(Transform child in optionsList) Destroy(child.gameObject);
             StartCoroutine(DisplayText(actor.DisplayName, text, true));
         });
         dialogueController.Events.Choice.AddListener((actor, text, choices) => {
+            if(actor == null) return;
             foreach(Transform child in optionsList) Destroy(child.gameObject);
             StartCoroutine(DisplayText(actor.DisplayName, text, false));
             foreach(var choice in choices){
@@ -46,7 +51,24 @@ public class DialogueDisplay : MonoBehaviour {
         });
         dialogueController.Events.End.AddListener(CloseDialogue);
         dialogueController.Events.NodeEnter.AddListener((node) => {
-
+            //TODO better to refactor and add a custom contract node
+            SignContractAction action = null;
+            foreach(var exitAction in node.ExitActions){
+                ActionRuntime actionRuntime = exitAction as ActionRuntime;
+                if(actionRuntime == null) continue;
+                SignContractAction actionData = actionRuntime.GetFieldValue<IActionData>("_data") as SignContractAction;
+                if(actionData == null) continue;
+                action = actionData;
+                break;
+            }
+            if(action != null){
+                gameObject.SetActive(false);
+                contractController.callback = () => {
+                    gameObject.SetActive(true);
+                    dialogueController.Next();
+                };
+                contractController.OpenContract(action.contract);
+            }
         });
     }
 
@@ -76,7 +98,8 @@ public class DialogueDisplay : MonoBehaviour {
             yield return new WaitForSeconds(typingSpeed);
         }
         if(autoprogress){
-            while (!Input.GetMouseButtonDown(0)) {
+            //TODO use new input system
+            while (!Input.GetMouseButtonDown(0) && !Input.GetKeyDown(KeyCode.Space)) {
                 yield return null;
             }
             dialogueController.Next();
