@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6632581985781224931}
   - component: {fileID: 6483914552100462733}
   m_Layer: 0
-  m_Name: device
+  m_Name: Device Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8398052625434712786, guid: 16946e26442f77a47b7d6c959b4f6bcd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 057587596482def40960087447fbe6f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,8 +101,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.51527905, y: 0.07631419}
-    oldSize: {x: 1.7421875, y: 3.015625}
+    pivot: {x: 0.5, y: 0.12}
+    oldSize: {x: 1.9140625, y: 3.7382812}
     newSize: {x: 1.4375, y: 2.6328125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -299,7 +299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4834173202078192919, guid: 39da913f7bee2ee47aae3ff1d79756f6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4834173202078192919, guid: 39da913f7bee2ee47aae3ff1d79756f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

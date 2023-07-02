@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 8752878767279995279}
   - component: {fileID: 8626531060970337015}
   m_Layer: 0
-  m_Name: keg
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9129876023514113693, guid: 16946e26442f77a47b7d6c959b4f6bcd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b4e9094c0331554da66dda7e16cef85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -197,8 +197,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.47512972, y: 0.11256597}
-    oldSize: {x: 1.0703125, y: 1.1679688}
+    pivot: {x: 0.5, y: 0.09802108}
+    oldSize: {x: 1.296875, y: 2.3632812}
     newSize: {x: 1.25, y: 1.7617188}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

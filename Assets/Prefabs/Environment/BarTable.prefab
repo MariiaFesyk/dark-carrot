@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 459543057098658541}
   - component: {fileID: 6261785657217056819}
   m_Layer: 0
-  m_Name: table in main room
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,7 +122,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6631546240039058378, guid: 16946e26442f77a47b7d6c959b4f6bcd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77c33dc62ebe4f7498efadb79ebd2fa8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -149,8 +149,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.50529397, y: 0.2157717}
-    oldSize: {x: 1.6757812, y: 1.765625}
+    pivot: {x: 0.49848643, y: 0.19078544}
+    oldSize: {x: 1.765625, y: 2.0742188}
     newSize: {x: 1.6757812, y: 1.765625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
