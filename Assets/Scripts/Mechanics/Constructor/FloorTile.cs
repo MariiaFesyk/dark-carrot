@@ -13,8 +13,9 @@ public class FloorTile : Tile {
     [SerializeField] public Vector2 tileSize = Vector2.one;
     private Sprite[] sliced;
 
-    void OnEnable(){
-        sliced = sprite ? SliceSprite(sprite, (Vector2Int) size) : null;
+    public override bool StartUp(Vector3Int position, ITilemap tilemap, GameObject go){
+        if(sliced == null || sliced[0] == null) sliced = sprite ? SliceSprite(sprite, (Vector2Int) size) : null;
+        return base.StartUp(position, tilemap, go);
     }
 
     public override void RefreshTile(Vector3Int position, ITilemap tilemap){

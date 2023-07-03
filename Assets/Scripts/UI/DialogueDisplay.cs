@@ -10,7 +10,6 @@ using CleverCrow.Fluid.Dialogues;
 using CleverCrow.Fluid.Dialogues.Actions;
 using UnityEngine.InputSystem;
 using TMPro;
-using UnityEngine.InputSystem;
 
 public class DialogueDisplay : MonoBehaviour {
     [SerializeField] private PlayerInput inputSystem;
