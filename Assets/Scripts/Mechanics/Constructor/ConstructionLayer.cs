@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 [RequireComponent(typeof(Tilemap))]
 public class ConstructionLayer : MonoBehaviour, AStar.IGrid2D {
     [SerializeField] private Tilemap floor;
+    [SerializeField] private Tilemap walls;
 
     protected Tilemap tilemap { get; private set; }
     private Dictionary<Vector3Int, Constructed> grid = new();
@@ -43,6 +44,7 @@ public class ConstructionLayer : MonoBehaviour, AStar.IGrid2D {
             Vector2Int next = offset + cell;
             if(grid.ContainsKey((Vector3Int) next)) continue;
             if(floor?.HasTile((Vector3Int) next) == false) continue;
+            if(walls?.HasTile((Vector3Int) next) == true) continue;
             yield return next;
         }
     }

@@ -3,6 +3,7 @@ using UnityEngine;
 [DisallowMultipleComponent, RequireComponent(typeof(Collider2D))]
 public abstract class Interactable : MonoBehaviour {
     [SerializeField] private ObjectSet layerSet;
+    [field: SerializeField] public int priority { get; private set; } 
     
     private void OnTriggerEnter2D(Collider2D collider){
         if(!collider.CompareTag("Player")) return;

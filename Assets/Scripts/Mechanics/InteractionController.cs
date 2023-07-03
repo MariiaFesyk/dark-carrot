@@ -15,12 +15,16 @@ public class InteractionController : MonoBehaviour, InputActions.IPlayerActions 
     private void ReselectInteractable(){
         Interactable closest = null;
         float minDistanceSquared = float.MaxValue;
+        int maxPriority = int.MinValue;
         foreach(Interactable interactable in interactables){
+            if(interactable.priority < maxPriority) continue;
+
             float distanceSquared = (interactable.transform.position - transform.position).sqrMagnitude;
             if(distanceSquared >= minDistanceSquared) continue;
 
             if(!interactable.CanInteract(this)) continue;
             minDistanceSquared = distanceSquared;
+            maxPriority = interactable.priority;
             closest = interactable;
         }
         if(closest != selected){
