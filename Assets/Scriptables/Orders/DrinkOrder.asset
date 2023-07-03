@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df17d8cea3ebf6d40aa6b5809bf31d15, type: 3}
   m_Name: DrinkOrder
   m_EditorClassIdentifier: 
-  <Duration>k__BackingField: 25
+  <Duration>k__BackingField: 40
   tags:
   - {fileID: 11400000, guid: 6492149f1bd22974f959db71c8eff535, type: 2}
   icon: {fileID: 0}

@@ -75,7 +75,7 @@ public class InnerGlow : MonoBehaviour {
                     corner.x * 0.5f, corner.y * 0.5f, 0f
                 )));
 
-                colors.Add(new Color(color.r, color.g, color.b, quad_samples[i]));
+                colors.Add(new Color(color.r, color.g, color.b, color.a * quad_samples[i]));
             }
             
             indices.AddRange((x + y) % 2 == 0 ? new int[6]{

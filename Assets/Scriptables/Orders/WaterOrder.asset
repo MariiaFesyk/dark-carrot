@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df17d8cea3ebf6d40aa6b5809bf31d15, type: 3}
   m_Name: WaterOrder
   m_EditorClassIdentifier: 
-  <Duration>k__BackingField: 25
+  <Duration>k__BackingField: 40
   tags:
   - {fileID: 11400000, guid: 65c1455a4e2e2fb41a5229afce8e8178, type: 2}
   icon: {fileID: 0}

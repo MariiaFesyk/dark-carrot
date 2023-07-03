@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   layerSet: {fileID: 11400000, guid: ac433738ced32324c8d79ae8961fb2dc, type: 2}
+  <priority>k__BackingField: 0
+  refund: 1
 --- !u!1 &1277833949882124943
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df17d8cea3ebf6d40aa6b5809bf31d15, type: 3}
   m_Name: FireOrder
   m_EditorClassIdentifier: 
-  <Duration>k__BackingField: 25
+  <Duration>k__BackingField: 40
   tags:
   - {fileID: 11400000, guid: e03af86cccc270f448e3d5b77e00b453, type: 2}
   icon: {fileID: 0}
