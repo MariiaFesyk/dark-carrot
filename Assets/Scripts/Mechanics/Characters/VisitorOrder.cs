@@ -26,8 +26,13 @@ public class VisitorOrder : ScriptableObject {
     }
 
     public void Fulfill(Item item, Visitor visitor){
+        //TODO inject some other way? emit an global scriptable event that log will be listening to?
+        var log = FindFirstObjectByType<AwardLog>();
+
         foreach(var reward in rewards){
-            reward.resource.Amount += reward.amount + reward.multiplier * item.cost;
+            int amount = reward.amount + reward.multiplier * item.cost;
+            reward.resource.Amount += amount;
+            log?.ShowReward(visitor.gameObject, reward.resource, amount);
         }
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7845921218145295695}
   - component: {fileID: 653374747554946601}
   m_Layer: 0
-  m_Name: Visitor
+  m_Name: VisitorBoar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,14 +79,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907034845de843442aad304e5f47130e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <priority>k__BackingField: 0
   layerSet: {fileID: 11400000, guid: ac433738ced32324c8d79ae8961fb2dc, type: 2}
   bubbleParticles: {fileID: 653374749340581647}
   progressIndicator: {fileID: 3942036868718092321}
   orderIcon: {fileID: 5166565180036162527}
   unknownOrderIcon: {fileID: 8052375171590066175, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
-  schedule:
-    mask: 
   orders:
   - {fileID: 11400000, guid: 085ec99fce5e8724ea5639cd95c19212, type: 2}
   - {fileID: 11400000, guid: d7b4dc621d3b4d54ca93bceb7daa54c3, type: 2}
@@ -94,7 +91,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c566f2396890a1d49a744d093c335323, type: 2}
   - {fileID: 11400000, guid: 43692e44328379f4482149332b581543, type: 2}
   - {fileID: 11400000, guid: 00f05012154a0104580e1dce7a4dd6ea, type: 2}
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 5cbffe8a7c74b054997877555d8dc9b1, type: 2}
 --- !u!1 &653374748654626962
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +165,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 96533a4d46f5c914680c2d395ea0592b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 438991650699d7040abacf831e416db0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
