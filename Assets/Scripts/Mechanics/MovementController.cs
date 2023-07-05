@@ -61,7 +61,10 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
         Vector2 target = context.ReadValue<Vector2>();
         if(Camera.main){
             var ndc = Camera.main.ScreenToViewportPoint(target);
-            if(ndc.x < 0 || ndc.x > 1 || ndc.y < 0 || ndc.y > 1) return;
+            if(ndc.x < 0 || ndc.x > 1 || ndc.y < 0 || ndc.y > 1){
+                pressed = false;
+                return;
+            }
             
             targetPosition = Camera.main.ScreenToWorldPoint(target);
         }
