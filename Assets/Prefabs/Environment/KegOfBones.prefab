@@ -66,7 +66,7 @@ MonoBehaviour:
   capacity: 0
   display: {fileID: 7730613423509683490}
   animator: {fileID: 0}
-  item: {fileID: 11400000, guid: b09d6868cd3108644a4fb0773e33d769, type: 2}
+  item: {fileID: 11400000, guid: 27eccae38b21a9e49b916140b4d5124a, type: 2}
   quantity: 0
 --- !u!114 &7436217143115029503
 MonoBehaviour:

@@ -9,6 +9,7 @@ using CleverCrow.Fluid.Dialogues;
 [RequireComponent(typeof(AIAgent2D))]
 public class Visitor : Interactable {
     [SerializeField] private ParticleSystem bubbleParticles;
+	[SerializeField] private GameObject dialogIcon;
     [SerializeField] private Image progressIndicator;
     [SerializeField] private Image orderIcon;
     [SerializeField] private Sprite unknownOrderIcon;
@@ -61,6 +62,7 @@ public class Visitor : Interactable {
     public void OnWorkingPhaseEnd(){
         if(state == VisitorState.Idle){
             state = VisitorState.Storytelling;
+			dialogIcon.SetActive(true);
         }else{
             Leave();
         }
@@ -74,6 +76,7 @@ public class Visitor : Interactable {
 
         state = VisitorState.Leaving;
         target.Set(null);
+		dialogIcon?.SetActive(false);
 
         //TODO move to event trigger?
         var dirt = target.GetComponentInParent<Contamination>();

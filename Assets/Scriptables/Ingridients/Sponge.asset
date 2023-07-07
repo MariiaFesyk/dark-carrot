@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Sponge
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Sponge
-  <Icon>k__BackingField: {fileID: 6402667650690887052, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  <Icon>k__BackingField: {fileID: 21300000, guid: 3262deffa8cc68d40b21f50c7141d7c1, type: 3}
   cost: 0
   <Tags>k__BackingField: []

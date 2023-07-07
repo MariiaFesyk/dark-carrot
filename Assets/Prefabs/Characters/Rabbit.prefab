@@ -3101,7 +3101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5145042131049369956}
-  movementSpeed: 5
+  movementSpeed: 7
   accelerationDuration: 0.2
   decelerationDuration: 0.1
   movementCurve:
