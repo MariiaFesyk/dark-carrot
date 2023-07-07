@@ -31,8 +31,8 @@ MonoBehaviour:
   _uniqueId: d25a70f1-573f-476f-9759-4b57a51efa76
   rect:
     serializedVersion: 2
-    x: 51074.2
-    y: 50463.8
+    x: 51106.2
+    y: 50490.8
     width: 200
     height: 142
   nodeTitle: 
@@ -43,22 +43,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: You little dumb rat, I was joking, go away.
---- !u!114 &-4428658125909713309
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
-  m_Name: Choice
-  m_EditorClassIdentifier: 
-  text: Yes, sir
-  children: []
-  _uniqueId: a7ba44a3-74a4-4f4b-9db5-68cafea1b646
+  dialogue: I thought we were friends
 --- !u!114 &-4404955087588049912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: No. busy day
+  text: I need them for myself
   children:
   - {fileID: -563488044109092792}
   _uniqueId: 9c5b26ad-67ac-48ce-94ba-ebcdd86f5563
@@ -155,20 +140,19 @@ MonoBehaviour:
   _uniqueId: b6fe3b17-b01d-4b67-a931-f6c4e80d618a
   rect:
     serializedVersion: 2
-    x: 50475.2
-    y: 50063.8
+    x: 50818.2
+    y: 50070.8
     width: 200
-    height: 162
+    height: 142
   nodeTitle: 
   children: []
   conditions: []
   enterActions: []
   exitActions: []
-  choices:
-  - {fileID: -4428658125909713309}
+  choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Could you bring me some more food?
+  dialogue: See ya later then
 --- !u!114 &-397884776617067503
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -195,7 +179,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
-  m_Name: Dialogue
+  m_Name: BoarDialogue
   m_EditorClassIdentifier: 
   _nodes:
   - {fileID: 1532999317496806401}
@@ -209,7 +193,7 @@ MonoBehaviour:
   - {fileID: 226649039253554845}
   - {fileID: 5804991410437517792}
   root: {fileID: 1532999317496806401}
-  scrollPosition: {x: 50003.465, y: 50052.9}
+  scrollPosition: {x: 50402.465, y: 50049.9}
 --- !u!114 &226649039253554845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +224,7 @@ MonoBehaviour:
   - {fileID: -4404955087588049912}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Are you ready to discuss shady business?
+  dialogue: Are you ready to discuss <color=#FF0000>shady business</color>?
 --- !u!114 &1532999317496806401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Wow, but no thanks
+  text: I am in
   children:
   - {fileID: 2706136742943837722}
   _uniqueId: 48a26d30-572d-41d0-9b7a-d70bd9f6cbdd
@@ -298,8 +282,8 @@ MonoBehaviour:
   _uniqueId: 266806c1-5fde-4ba5-a0d2-7bccf10cd9e1
   rect:
     serializedVersion: 2
-    x: 50480.2
-    y: 50267.8
+    x: 50456.2
+    y: 50291.8
     width: 200
     height: 142
   nodeTitle: 
@@ -311,7 +295,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Once I was a warrior but I got arrow in my knee.
+  dialogue: Perhaps you are ready to do some <color=#FF0000>business</color>
 --- !u!114 &2706136742943837722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,8 +311,8 @@ MonoBehaviour:
   _uniqueId: cf04dac5-bc43-4183-9bf0-c4819611ced2
   rect:
     serializedVersion: 2
-    x: 51062.2
-    y: 50222.8
+    x: 51112.2
+    y: 50312.8
     width: 200
     height: 142
   nodeTitle: 
@@ -340,7 +324,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: We can disscuss it later, if you wish. I have some mindblowing stuff.
+  dialogue: We can disscuss our business plan later, if you wish. I have some mindblowing
+    stuff.
 --- !u!114 &2882519775046696422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -373,8 +358,8 @@ MonoBehaviour:
   _uniqueId: 2c45472b-75e9-4788-ad75-9b101f5cbd41
   rect:
     serializedVersion: 2
-    x: 50214.2
-    y: 50281.8
+    x: 50450.2
+    y: 50065.8
     width: 200
     height: 182
   nodeTitle: 
@@ -387,7 +372,7 @@ MonoBehaviour:
   - {fileID: -2302638273681742264}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Do you have some time to chat?
+  dialogue: would you mind returning back all my <color=#FF0000>coins</color>?
 --- !u!114 &5123321008799034219
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -400,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: I should call guards!
+  text: I shall report on you
   children:
   - {fileID: -6104042352647685693}
   _uniqueId: e4fdd22f-858d-4c15-a4ab-34e138246e94
@@ -419,8 +404,8 @@ MonoBehaviour:
   _uniqueId: d8e32540-d37b-4d9c-a3a3-57845648aa26
   rect:
     serializedVersion: 2
-    x: 50737.2
-    y: 50267.8
+    x: 50807.2
+    y: 50273.8
     width: 200
     height: 182
   nodeTitle: 
@@ -433,8 +418,8 @@ MonoBehaviour:
   - {fileID: 5123321008799034219}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Now Im a merchant and I sell different stuff to shady people. Do you
-    like find something banned by the law? I can get it.
+  dialogue: Im a merchant and I sell different <color=#FF0000>shady</color> stuff.
+    Banned illegal ingridients, all the most lethal and cute. Interested?
 --- !u!114 &5270351970629491275
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -447,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: All time you wish
+  text: Eh, sure
   children:
   - {fileID: 1851670080156350896}
   _uniqueId: 1f66b666-2ef2-4dce-a957-213c8eb19967
@@ -466,8 +451,8 @@ MonoBehaviour:
   _uniqueId: b953301a-3c41-4c50-813a-e8aa7d48d514
   rect:
     serializedVersion: 2
-    x: 50467.2
-    y: 50469.8
+    x: 50465.2
+    y: 50485.8
     width: 200
     height: 162
   nodeTitle: 
@@ -510,7 +495,7 @@ MonoBehaviour:
   - {fileID: -7848280371833518990}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Hi tiny rabbit!
+  dialogue: <color=#FF0000>Hello</color> tiny rabbit!
 --- !u!114 &7900422330110402728
 MonoBehaviour:
   m_ObjectHideFlags: 1

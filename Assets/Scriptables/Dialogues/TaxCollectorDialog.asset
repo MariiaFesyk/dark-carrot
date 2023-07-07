@@ -130,8 +130,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: ff0b37c8b6670474bb819aa418f8db23, type: 2}
   audio: {fileID: 0}
-  dialogue: Your debt has finally caught up tp you. There is no way forward untill
-    you pay all of it.
+  dialogue: Your <color=#FF0000>debt</color> has finally caught up to you. There
+    is no way forward untill you <color=#FF0000>pay</color> all of it.
 --- !u!114 &-658751353589853901
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -167,7 +167,7 @@ MonoBehaviour:
   - {fileID: -4874463114393102522}
   - {fileID: 6363000814594231049}
   root: {fileID: -6991487895610374690}
-  scrollPosition: {x: 50000.6, y: 50087.7}
+  scrollPosition: {x: 50000.6, y: 49967.7}
 --- !u!114 &6363000814594231049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,5 +225,5 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: ff0b37c8b6670474bb819aa418f8db23, type: 2}
   audio: {fileID: 0}
-  dialogue: At the end of every work shift I will come to collect all the coins that
-    you've earned. Now get back to work!
+  dialogue: At the end of every work shift I will come to collect all the <color=#FF0000>coins</color>
+    that you've earned. Now get back to work!

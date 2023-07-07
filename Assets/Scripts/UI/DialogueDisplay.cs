@@ -91,11 +91,16 @@ public class DialogueDisplay : MonoBehaviour {
     }
 
     private IEnumerator DisplayText(string actor, string text, bool autoprogress){
-        lines.text = $"{actor}: ";
-        foreach (char character in text.ToCharArray()){
-            lines.text += character;
-            yield return new WaitForSeconds(typingSpeed);
-        }
+        lines.text = $"{actor}: {text}";
+		lines.maxVisibleCharacters = 0;
+		lines.ForceMeshUpdate();
+		
+		var content = lines.GetParsedText();
+		while(lines.maxVisibleCharacters < content.Length){
+			yield return new WaitForSeconds(typingSpeed);
+			lines.maxVisibleCharacters++;
+		}
+		
         if(autoprogress){
             //TODO use new input system
             while (!Input.GetMouseButtonDown(0) && !Input.GetKeyDown(KeyCode.Space)) {
