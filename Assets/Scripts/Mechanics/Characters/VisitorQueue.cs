@@ -37,11 +37,11 @@ public class VisitorQueue : MonoBehaviour {
     }
 
     private IEnumerator SpawnUniqueVisitors(Visitor[] visitors){
-        visitors = (Visitor[]) visitors.Clone();
+        visitors = System.Array.FindAll(visitors, visitor => visitor.schedule.Validate());
         visitors.Shuffle();
         List<(Visitor, float)> queue = new();
         foreach(var visitor in visitors){
-            float arrivalTime = Random.Range(0.1f, 0.25f) * phase.duration * 0f;
+            float arrivalTime = Random.Range(0.1f, 0.25f) * phase.duration;
             queue.Add((visitor, arrivalTime));
         }
 
@@ -60,6 +60,8 @@ public class VisitorQueue : MonoBehaviour {
     }
 
     private IEnumerator SpawnCommonVisitors(Visitor[] visitors){
+        visitors = System.Array.FindAll(visitors, visitor => visitor.schedule.Validate());
+
         if(visitors.Length == 0) yield break;
         while(true){
             float interval = Random.Range(minSpawnInterval, maxSpawnInterval);

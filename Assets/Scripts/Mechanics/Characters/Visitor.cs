@@ -15,10 +15,20 @@ public class Visitor : Interactable {
 
     [System.Serializable]
     public class Schedule {
+        public Phase phase;
+        [SerializeField, Min(1)] public int start = 1;
         public bool[] mask;
+
+        public bool Validate(){
+            if(phase == null) return true;
+            if(phase.count < start) return false;
+            if(mask.Length == 0) return true;
+            int index = (phase.count - start) % mask.Length;
+            return mask[index];
+        }
     }
 
-    [SerializeField] private Schedule schedule;
+    [SerializeField] public Schedule schedule;
 
     [SerializeField] private VisitorOrder[] orders;
     [SerializeField] public DialogueGraph dialogue;
@@ -64,6 +74,13 @@ public class Visitor : Interactable {
 
         state = VisitorState.Leaving;
         target.Set(null);
+
+        //TODO move to event trigger?
+        var dirt = target.GetComponentInParent<Contamination>();
+        if(dirt != null && fulfilled > 0){
+            dirt.Contribute(Random.Range(0.2f, 0.6f));
+        }
+
         target = null;
         agent.SetDestination(queue.doorLocation.position);
         agent.OnFinished += () => {

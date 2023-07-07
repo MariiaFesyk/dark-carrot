@@ -22,6 +22,7 @@ public class Phase : ScriptableObject {
 
     void OnEnable(){
         enabled = false;
+        count = 0;
     }
 
     public void Enter(){

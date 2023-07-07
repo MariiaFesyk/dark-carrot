@@ -13,7 +13,7 @@ public class TaxCollector : Interactable {
     public override void OnInteraction(InteractionController interacting){
         var dialogueDisplay = FindObjectOfType<DialogueDisplay>(true);
         dialogueDisplay.DialogCallback += () => {
-
+            collect.Amount = 0;
             phase.Exit();
         };
         dialogueDisplay.OpenDialogue(dialogue);
