@@ -25,9 +25,9 @@ public class Item : ScriptableObject {
 
 		public bool Validate(Item item){
 			if(item == null) return false;
+			if(tags.Length == 0 || whitelist.Length == 0) return true;
 			if(System.Array.IndexOf<Item>(whitelist, item) != -1) return true;
 
-			if(tags.Length == 0) return true;
 			foreach(var tag in tags)
 				if(System.Array.IndexOf<Tag>(item.Tags, tag) != -1) return true;
 			return false;
