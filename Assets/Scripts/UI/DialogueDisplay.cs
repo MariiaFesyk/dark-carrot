@@ -41,7 +41,8 @@ public class DialogueDisplay : MonoBehaviour {
 
             if(actor.Portrait != null) character.sprite = actor.Portrait; //TODO assign at start
             StartCoroutine(DisplayMessage(
-                $"<size=120%>{actor.DisplayName}:</size> {text}", null
+                //$"<size=120%>{actor.DisplayName}:</size> {text}",
+				text, null
             ));
         });
         dialogueController.Events.Choice.AddListener((actor, text, choices) => {
@@ -49,7 +50,8 @@ public class DialogueDisplay : MonoBehaviour {
 
             if(actor.Portrait != null) character.sprite = actor.Portrait; //TODO assign at start
             StartCoroutine(DisplayMessage(
-                $"<size=120%>{actor.DisplayName}:</size> {text}", choices.ConvertAll(choice => choice.Text).ToArray()
+                //$"<size=120%>{actor.DisplayName}:</size> {text}",
+				text, choices.ConvertAll(choice => choice.Text).ToArray()
             ));
         });
         dialogueController.Events.End.AddListener(CloseDialogue);
@@ -126,6 +128,7 @@ public class DialogueDisplay : MonoBehaviour {
                 option.index = i;
                 option.clickEvent.AddListener(dialogueController.SelectChoice);
             }
+			LayoutRebuilder.ForceRebuildLayoutImmediate(view.parent as RectTransform);
         }
     }
 

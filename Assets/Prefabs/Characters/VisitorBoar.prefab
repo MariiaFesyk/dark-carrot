@@ -90,18 +90,13 @@ MonoBehaviour:
   orderIcon: {fileID: 5166565180036162527}
   unknownOrderIcon: {fileID: 8052375171590066175, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
   schedule:
+    character: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
     phase: {fileID: 11400000, guid: 3cbb9821da4095147a5963004ec0eac7, type: 2}
-    start: 1
-    mask: 0100
+    start: 2
+    max: 0
+    mask: 01
   orders:
   - {fileID: 11400000, guid: 085ec99fce5e8724ea5639cd95c19212, type: 2}
-  - {fileID: 11400000, guid: d7b4dc621d3b4d54ca93bceb7daa54c3, type: 2}
-  - {fileID: 11400000, guid: 6faff4c608e60a943a82c72a8a30a2b3, type: 2}
-  - {fileID: 11400000, guid: bf02ef781a7133d4b8d9047da3ffd724, type: 2}
-  - {fileID: 11400000, guid: d8c072821a849b64f95cd887c8e151a1, type: 2}
-  - {fileID: 11400000, guid: 18a2638bb3fdb4948a24226c119249df, type: 2}
-  - {fileID: 11400000, guid: 3e8ad2542e2ed0e4484e8bdaca9360db, type: 2}
-  - {fileID: 11400000, guid: c489c5b29f22db0478830655847475e1, type: 2}
   dialogue: {fileID: 11400000, guid: 5cbffe8a7c74b054997877555d8dc9b1, type: 2}
 --- !u!1 &653374748654626962
 GameObject:

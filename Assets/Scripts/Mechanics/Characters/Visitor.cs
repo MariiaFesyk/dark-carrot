@@ -16,13 +16,18 @@ public class Visitor : Interactable {
 
     [System.Serializable]
     public class Schedule {
+		public Character character;
         public Phase phase;
         [SerializeField, Min(1)] public int start = 1;
+		[SerializeField] public int max = 0;
         public bool[] mask;
 
         public bool Validate(){
+			if(character && !character.active) return false;
+			
             if(phase == null) return true;
             if(phase.count < start) return false;
+			if(max >= start && phase.count > max) return false;
             if(mask.Length == 0) return true;
             int index = (phase.count - start) % mask.Length;
             return mask[index];

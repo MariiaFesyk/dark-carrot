@@ -1,5 +1,159 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9164199087403622356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: ae51a4af-3fee-4326-bcea-1ae67aaeea53
+  rect:
+    serializedVersion: 2
+    x: 51000.2
+    y: 50709.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -690789389850037245}
+  - {fileID: 8092311955299863362}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "That dude even said he doesn\u2019t know any recipes with the octopus
+    tentacles yet."
+--- !u!114 &-8762667150175232977
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Thanks. What can I offer you?
+  children:
+  - {fileID: -143707692044981627}
+  _uniqueId: d113a9b8-ecf1-47b5-a612-ff486b51df18
+--- !u!114 &-8747324031844764026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 33e0e54c-0b4b-49a9-9e1b-d30dc4ae5215
+  rect:
+    serializedVersion: 2
+    x: 50730.2
+    y: 50637.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -9164199087403622356}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: If we proposed a longer contract, we would go into the red. The deal
+    wasn't very good anyway.
+--- !u!114 &-8498066346923812542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 189f6eb7-550f-46f9-a190-9d60acf1d363
+  rect:
+    serializedVersion: 2
+    x: 50697.2
+    y: 51131.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 8400349191019136951}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: You must be joking. I told you yesterday.
+--- !u!114 &-8455922256819148950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: "Four years won\u2019t make you go broke. I guarantee."
+  children:
+  - {fileID: -5384101955371572553}
+  _uniqueId: 294e471c-f41a-4a4c-bd46-b88982352ab2
+--- !u!114 &-8247954997658397801
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: For what purpose?
+  children:
+  - {fileID: 1217141244836673112}
+  _uniqueId: d96b8e7f-7993-4e24-8837-03028be4267c
+--- !u!114 &-7851886409442683404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: What deal?
+  children:
+  - {fileID: -8498066346923812542}
+  _uniqueId: d0683703-e05e-49aa-a0cc-631b63426019
 --- !u!114 &-7848280371833518990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16,6 +170,65 @@ MonoBehaviour:
   children:
   - {fileID: 4580744804212449303}
   _uniqueId: cc823f4f-1265-4cdf-a66f-8533c1820566
+--- !u!114 &-6929532111613177006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 05881537-7a3b-47fe-ab3f-7d1376420024
+  rect:
+    serializedVersion: 2
+    x: 52435.2
+    y: 50762.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -5652393571879073893}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Great. And the barrel is already in your kitchen, by the way.
+--- !u!114 &-6700599018620228861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4be6085d-c077-442d-8843-372237587eff
+  rect:
+    serializedVersion: 2
+    x: 51475.2
+    y: 50320.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -2784920951395532035}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: But you cook better. Probably. I decided to dine not where I have to
+    do my business.
 --- !u!114 &-6104042352647685693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,8 +244,8 @@ MonoBehaviour:
   _uniqueId: d25a70f1-573f-476f-9759-4b57a51efa76
   rect:
     serializedVersion: 2
-    x: 51106.2
-    y: 50490.8
+    x: 50943.2
+    y: 49981.8
     width: 200
     height: 142
   nodeTitle: 
@@ -44,6 +257,417 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: I thought we were friends
+--- !u!114 &-6103958974526328011
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I rejoice in your success.
+  children:
+  - {fileID: 1011898616185056121}
+  _uniqueId: 63c38f1d-2aa2-40ef-b079-647efe360962
+--- !u!114 &-6059893083379535026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: "I\u2019m sorry to hear it."
+  children:
+  - {fileID: -8747324031844764026}
+  _uniqueId: 5144098e-523b-4048-b93c-e6685c503fd7
+--- !u!114 &-5658170333145518641
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41def35ef7ec4ad7ab95a8df4a3ca85a, type: 3}
+  m_Name: SetGlobalString
+  m_EditorClassIdentifier: 
+  _title: SetGlobalString
+  _uniqueId: 51d6c54f-78b0-4c3f-82be-ea02dda0ef86
+  _value: Wrong
+  _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
+--- !u!114 &-5652393571879073893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 04fcd772-bd13-4f44-82a2-dbcc23c2c976
+  rect:
+    serializedVersion: 2
+    x: 52666.2
+    y: 50847.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -3398328373367464011}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Now sign this contract, please.
+--- !u!114 &-5384101955371572553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 10b76881-3914-43bc-9754-4d5c8d5d1ec7
+  rect:
+    serializedVersion: 2
+    x: 53195.2
+    y: 50607.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: 2270106723992638797}
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Thanks. I think your advice might work out. I\u2019ll visit you tomorrow
+    after a deal."
+--- !u!114 &-5304503462154427177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: cd2b8004-5c73-4fff-af36-4a24d517126f
+  rect:
+    serializedVersion: 2
+    x: 52193.2
+    y: 50434.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -1800322578897642713}
+  - {fileID: -304133848535384057}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "But this contract is different. And it\u2019s not about glashtyns. We\u2019re
+    rivaling the official capital supplies."
+--- !u!114 &-5243053767959245879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 18eb6d32-b683-4cc3-8e0a-385ca7c0f509
+  rect:
+    serializedVersion: 2
+    x: 50225.2
+    y: 50874.8
+    width: 200
+    height: 162
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: 3624409731787718823}
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -4180564794691498064}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Oh, Hi!
+--- !u!114 &-5234364402556348926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: You didn't say what product this deal was for.
+  children:
+  - {fileID: -2815261985903909765}
+  _uniqueId: da2f51b4-fd81-4d71-8345-f5a6dc13b922
+--- !u!114 &-5186198330329487019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a108d61b-b180-4c50-b5b7-e1c966729c6c
+  rect:
+    serializedVersion: 2
+    x: 51240.2
+    y: 50319.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -6700599018620228861}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Yeah, I came here to conclude a contract with another inn.
+--- !u!114 &-5157935361754319745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 2cf6c239-e8c5-48eb-9d82-89c8f382e372
+  rect:
+    serializedVersion: 2
+    x: 51475.2
+    y: 50531.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -2784920951395532035}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "And so happened that\u2019s the place where I came to conclude a contract."
+--- !u!114 &-5137921513844882949
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Why so?
+  children:
+  - {fileID: -5080364285257010516}
+  _uniqueId: a39471fa-0847-4300-9b72-b1bbf30355e1
+--- !u!114 &-5081863023350525603
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Are you sure?
+  children:
+  - {fileID: 1143339772098620973}
+  _uniqueId: 8e9b13fd-e731-4ee7-9585-a7c15c69527c
+--- !u!114 &-5080364285257010516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: f05ca249-fb3b-4dff-8e89-1fe9fbb9b734
+  rect:
+    serializedVersion: 2
+    x: 51949.2
+    y: 50437.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -5304503462154427177}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "I\u2019m working in the river agency \u201CHrunlug\u201D. If you have
+    not heard about us, then we breed glashtyns, the river horses."
+--- !u!114 &-5052985475000765968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: ca04a88b-3eec-49c1-a347-e173191a77b1
+  rect:
+    serializedVersion: 2
+    x: 52439.2
+    y: 50569.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -2760944052102595953}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Probably, but the business needs to be developed, otherwise we won\u2019t
+    earn much."
+--- !u!114 &-4987409060711602000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 38c1338f-d531-4fb8-8223-0eed1cc22e3e
+  rect:
+    serializedVersion: 2
+    x: 52437.2
+    y: 50407.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -2760944052102595953}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Yeah, most of our business is legal enough to sustain itself and work
+    alongside the Briradon\u2019s."
+--- !u!114 &-4878432851223396548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: e23d24b3-cb51-4c17-9c6e-2fb286cedba8
+  rect:
+    serializedVersion: 2
+    x: 52195.2
+    y: 50798.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 4029679274297411357}
+  - {fileID: -5081863023350525603}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "But I don\u2019t care about him anymore. If you want we can conclude
+    a supply contract with you. For half price."
+--- !u!114 &-4409414641405285703
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: "Unfortunately I can\u2019t offer you a bed."
+  children:
+  - {fileID: -4219145400046689366}
+  _uniqueId: c392d94f-5b80-4ff4-8685-6f3b765c0a7c
 --- !u!114 &-4404955087588049912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -60,6 +684,157 @@ MonoBehaviour:
   children:
   - {fileID: -563488044109092792}
   _uniqueId: 85030b04-57f1-4e9a-9667-481ae525777c
+--- !u!114 &-4404419721091860154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94ffa9e64338103468d7884a1c4e3f26, type: 3}
+  m_Name: CharacterAction
+  m_EditorClassIdentifier: 
+  _title: CharacterAction
+  _uniqueId: f38c8dcd-a895-40f0-ad59-9acae8f3cf05
+  character: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  active: 0
+--- !u!114 &-4219145400046689366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4359b93c-c4d0-4bf7-952b-3997f36d0f81
+  rect:
+    serializedVersion: 2
+    x: 51237.2
+    y: 50536.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -5157935361754319745}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: No problem, there is a place that counterparty advised me to stay in.
+--- !u!114 &-4180564794691498064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Hey, how's it going?
+  children:
+  - {fileID: -967766281064251948}
+  _uniqueId: d6edc816-799c-4548-bf29-7f1324285abe
+--- !u!114 &-3398328373367464011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: f98f6ff4-9ac3-4835-b334-c9c576e8e519
+  rect:
+    serializedVersion: 2
+    x: 52904.2
+    y: 50846.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 5823747910950835595}
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: 9152341576219330942}
+  choices: []
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: 
+--- !u!114 &-3230375633732825152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 24d0af00-e936-439b-a97c-0275e1ec6666
+  rect:
+    serializedVersion: 2
+    x: 51407.2
+    y: 51052.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 9010377829648569636}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "I\u2019ll spend another day here. The caravan to the west comes by only
+    tomorrow."
+--- !u!114 &-3079132226533676308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 5f2a1e57-4e77-4ed2-b253-1315891d0cac
+  rect:
+    serializedVersion: 2
+    x: 50481.2
+    y: 50671.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -6059893083379535026}
+  - {fileID: -2692897896165968944}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "So, the deal wasn\u2019t successful. The capital had a better offer."
 --- !u!114 &-3054529135827465756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -76,6 +851,142 @@ MonoBehaviour:
   _uniqueId: da3f61f9-4536-46f7-ae95-cc651e7f2560
   _value: 1
   _variable: {fileID: 11400000, guid: 91e685b0a53786946bc44e6a6f504f2f, type: 2}
+--- !u!114 &-2817150628074107728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 37d3dc28-9968-4c78-b6b5-41cabd4e7654
+  rect:
+    serializedVersion: 2
+    x: 50988.2
+    y: 50395.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 2186557506847446174}
+  - {fileID: -4409414641405285703}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: I'm here not for a long time - I'll spend the night in Ternopil until
+    tomorrow.
+--- !u!114 &-2815261985903909765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 92d06020-932d-423e-bf57-5f11d389bdee
+  rect:
+    serializedVersion: 2
+    x: 51408.2
+    y: 51205.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 4813140899157963926}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "It was a bit confidential\u2026 But I feel like I can be honest with
+    you, after all."
+--- !u!114 &-2784920951395532035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: e4b3fb17-029b-4574-9cb2-60671afd40b7
+  rect:
+    serializedVersion: 2
+    x: 51715.2
+    y: 50423.8
+    width: 200
+    height: 162
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -5137921513844882949}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Not gonna lie, I\u2019m a little worried about that contract."
+--- !u!114 &-2760944052102595953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: fb946e3c-4864-497a-a34c-b08dfe00cda6
+  rect:
+    serializedVersion: 2
+    x: 52689.2
+    y: 50474.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 3276100238956660311}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: But tomorrow I need to offer the client more favorable conditions than
+    capital had without knowing what exact trade they have.
+--- !u!114 &-2692897896165968944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: It was my fault with that advice.
+  children:
+  - {fileID: 2494237224054602584}
+  _uniqueId: 98c71e9e-c706-4cdf-9c08-d5e9378ae0c8
 --- !u!114 &-2302638273681742264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,6 +1019,68 @@ MonoBehaviour:
   children:
   - {fileID: 5804991410437517792}
   _uniqueId: fa0ca6fd-fa5c-466b-a56c-8b32195a1266
+--- !u!114 &-2044922395664775490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 10cd186e-db7d-44dd-b97b-3cab5c710da3
+  rect:
+    serializedVersion: 2
+    x: 53195.2
+    y: 50425.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: -5658170333145518641}
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Thanks. I think your advice might work out. I\u2019ll visit you tomorrow
+    after a deal."
+--- !u!114 &-1800322578897642713
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Is it even legal?
+  children:
+  - {fileID: -4987409060711602000}
+  _uniqueId: 772461f4-3dc1-4874-9d2a-5182d80bdd84
+--- !u!114 &-1559748306513160883
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94ffa9e64338103468d7884a1c4e3f26, type: 3}
+  m_Name: CharacterAction
+  m_EditorClassIdentifier: 
+  _title: CharacterAction
+  _uniqueId: a67cf9ab-47da-4868-87e3-31a8203084a2
+  character: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  active: 0
 --- !u!114 &-1410987634011792338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,6 +1098,160 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 91e685b0a53786946bc44e6a6f504f2f, type: 2}
   _comparison: 0
   _value: 0
+--- !u!114 &-1365385319685742953
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41def35ef7ec4ad7ab95a8df4a3ca85a, type: 3}
+  m_Name: SetGlobalString
+  m_EditorClassIdentifier: 
+  _title: SetGlobalString
+  _uniqueId: 374d4c15-116b-42fa-b780-7eaee7ba5b66
+  _value: EndWithoutContract
+  _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
+--- !u!114 &-1102196582411831832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 6a5c0232-96b6-4d1e-b0b0-22c932c70df7
+  rect:
+    serializedVersion: 2
+    x: 50226.2
+    y: 50642.8
+    width: 200
+    height: 162
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: 1850706650678782679}
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 7031139580358256112}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Oh, Hi!
+--- !u!114 &-1063923047592724484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 513b90ef-e993-4034-82f3-69a51f71a73b
+  rect:
+    serializedVersion: 2
+    x: 50745.2
+    y: 50398.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -2817150628074107728}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Today's drinks were brewed very well. Didn\u2019t think I could find
+    such a nice tavern here."
+--- !u!114 &-967766281064251948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 125324da-f34c-4601-bdae-dac6d1a804eb
+  rect:
+    serializedVersion: 2
+    x: 50474.2
+    y: 50906.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -6103958974526328011}
+  - {fileID: -7851886409442683404}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "I have good news! We\u2019ll celebrate my successful deal! So, your
+    advice hit the spot. I made a deal."
+--- !u!114 &-690789389850037245
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: And why then would he sign a contract with Briradon?
+  children:
+  - {fileID: 1954859520175522398}
+  _uniqueId: 556ada42-9351-44b8-9191-ffdb8780f805
+--- !u!114 &-631653362199694718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 3188b7da-83ad-44fd-8374-a98090b36218
+  rect:
+    serializedVersion: 2
+    x: 50221.2
+    y: 50345.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: 180139097645873057}
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -38602022708715793}
+  - {fileID: -8762667150175232977}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Hey. First time here, that\u2019s a lovely inn."
 --- !u!114 &-563488044109092792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,8 +1267,8 @@ MonoBehaviour:
   _uniqueId: b6fe3b17-b01d-4b67-a931-f6c4e80d618a
   rect:
     serializedVersion: 2
-    x: 50818.2
-    y: 50070.8
+    x: 50713.2
+    y: 49774.8
     width: 200
     height: 142
   nodeTitle: 
@@ -169,6 +1296,67 @@ MonoBehaviour:
   children:
   - {fileID: -563488044109092792}
   _uniqueId: 2986bcc4-77c5-484b-9ec3-bba1a30606e5
+--- !u!114 &-304133848535384057
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: "That\u2019s a difficult opponent to rival."
+  children:
+  - {fileID: -5052985475000765968}
+  _uniqueId: b5a52737-8b96-40ee-bcec-e4ef1dcf79f6
+--- !u!114 &-143707692044981627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 131d5cb9-aa72-4fa3-9685-f131106bb9c2
+  rect:
+    serializedVersion: 2
+    x: 50489.2
+    y: 50494.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -1063923047592724484}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "I\u2019m here just to relax a bit. Never been here in Ternopil before."
+--- !u!114 &-38602022708715793
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: It was abandoned until recently. Now I'm in charge of this place.
+  children:
+  - {fileID: 6379800723111880664}
+  _uniqueId: d2caacc2-23e6-4f62-9b0c-28eab46065c1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,8 +1380,71 @@ MonoBehaviour:
   - {fileID: -6104042352647685693}
   - {fileID: 226649039253554845}
   - {fileID: 5804991410437517792}
+  - {fileID: -631653362199694718}
+  - {fileID: 6379800723111880664}
+  - {fileID: -143707692044981627}
+  - {fileID: -1063923047592724484}
+  - {fileID: -2817150628074107728}
+  - {fileID: -5186198330329487019}
+  - {fileID: -4219145400046689366}
+  - {fileID: -6700599018620228861}
+  - {fileID: -5157935361754319745}
+  - {fileID: -2784920951395532035}
+  - {fileID: -5080364285257010516}
+  - {fileID: -5304503462154427177}
+  - {fileID: -4987409060711602000}
+  - {fileID: -5052985475000765968}
+  - {fileID: -2760944052102595953}
+  - {fileID: 3276100238956660311}
+  - {fileID: -2044922395664775490}
+  - {fileID: -5384101955371572553}
+  - {fileID: -5243053767959245879}
+  - {fileID: -1102196582411831832}
+  - {fileID: -3079132226533676308}
+  - {fileID: -8747324031844764026}
+  - {fileID: 2494237224054602584}
+  - {fileID: -9164199087403622356}
+  - {fileID: 1954859520175522398}
+  - {fileID: 7578737379681095422}
+  - {fileID: 2335010967176186860}
+  - {fileID: 6480489944730014149}
+  - {fileID: 1217141244836673112}
+  - {fileID: -4878432851223396548}
+  - {fileID: -6929532111613177006}
+  - {fileID: 1143339772098620973}
+  - {fileID: -5652393571879073893}
+  - {fileID: 5823747910950835595}
+  - {fileID: -3398328373367464011}
+  - {fileID: -967766281064251948}
+  - {fileID: 1011898616185056121}
+  - {fileID: -8498066346923812542}
+  - {fileID: 517628723421092914}
+  - {fileID: 8400349191019136951}
+  - {fileID: 694922368145171322}
+  - {fileID: -3230375633732825152}
+  - {fileID: -2815261985903909765}
+  - {fileID: 4813140899157963926}
+  - {fileID: 9010377829648569636}
+  - {fileID: 866928712763277922}
   root: {fileID: 1532999317496806401}
-  scrollPosition: {x: 50402.465, y: 50049.9}
+  scrollPosition: {x: 52539.465, y: 50668.9}
+--- !u!114 &180139097645873057
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c15c982b88481780c0df4b164b2119, type: 3}
+  m_Name: IsGlobalString
+  m_EditorClassIdentifier: 
+  _title: IsGlobalString
+  _uniqueId: e9ad94c9-8d9a-4f8d-bb1c-739b7a48efce
+  _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
+  _comparison: 0
+  _value: 
 --- !u!114 &226649039253554845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,8 +1460,8 @@ MonoBehaviour:
   _uniqueId: e77d154d-763c-4b05-af7c-059249c306e8
   rect:
     serializedVersion: 2
-    x: 50214.2
-    y: 50484.8
+    x: 50237.2
+    y: 49967.8
     width: 200
     height: 182
   nodeTitle: 
@@ -225,6 +1476,186 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Are you ready to discuss <color=#FF0000>shady business</color>?
+--- !u!114 &517628723421092914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 72e882e2-a336-4aab-b6ae-9e023bb013f8
+  rect:
+    serializedVersion: 2
+    x: 50935.2
+    y: 50972.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 694922368145171322}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: That publican had no choice.
+--- !u!114 &694922368145171322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: d5a5c58b-e544-47d5-8f7b-7a58bc59f99d
+  rect:
+    serializedVersion: 2
+    x: 51181.2
+    y: 51085.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 7552969389912260000}
+  - {fileID: -5234364402556348926}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: And I still think that your beer is better.
+--- !u!114 &866928712763277922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 24ce3a5f-d99b-47cf-a2ba-e2aa0a606a35
+  rect:
+    serializedVersion: 2
+    x: 52190.2
+    y: 51187.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: -1365385319685742953}
+  - {fileID: -1559748306513160883}
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Decent inflow for a little inn like this one. I enjoyed my time here.
+    Time to go, I have another little business here. Goodbye!
+--- !u!114 &1011898616185056121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: c9aac87d-0f6d-487d-9268-7c22a47e6bdd
+  rect:
+    serializedVersion: 2
+    x: 50712.2
+    y: 50966.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 517628723421092914}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Yep. Almost got us bankrupt, but our deal is far better than the capital\u2019s
+    one."
+--- !u!114 &1143339772098620973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: e9bff229-eeb7-490a-a2d3-e2cb1a383c3e
+  rect:
+    serializedVersion: 2
+    x: 52424.2
+    y: 50940.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -5652393571879073893}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Yeah. At least, you can have this barrel. The tentacles would be delivered
+    tomorrow.
+--- !u!114 &1217141244836673112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 7e41d8e6-c04b-4842-aa95-645157850cc1
+  rect:
+    serializedVersion: 2
+    x: 51969.2
+    y: 50799.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -4878432851223396548}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Gut brought it with me so that stupid innkeeper could check the quality
+    of our product.
 --- !u!114 &1532999317496806401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,8 +1677,9 @@ MonoBehaviour:
     height: 58
   nodeTitle: 
   children:
-  - {fileID: 6640134401428776868}
-  - {fileID: 226649039253554845}
+  - {fileID: -631653362199694718}
+  - {fileID: -1102196582411831832}
+  - {fileID: -5243053767959245879}
   conditions: []
   enterActions: []
   exitActions: []
@@ -267,6 +1699,23 @@ MonoBehaviour:
   children:
   - {fileID: 2706136742943837722}
   _uniqueId: 48a26d30-572d-41d0-9b7a-d70bd9f6cbdd
+--- !u!114 &1850706650678782679
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c15c982b88481780c0df4b164b2119, type: 3}
+  m_Name: IsGlobalString
+  m_EditorClassIdentifier: 
+  _title: IsGlobalString
+  _uniqueId: 67a7f5ce-0df6-49d9-b85f-cea064374f18
+  _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
+  _comparison: 0
+  _value: Wrong
 --- !u!114 &1851670080156350896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,8 +1731,8 @@ MonoBehaviour:
   _uniqueId: 266806c1-5fde-4ba5-a0d2-7bccf10cd9e1
   rect:
     serializedVersion: 2
-    x: 50456.2
-    y: 50291.8
+    x: 50461.2
+    y: 49965.8
     width: 200
     height: 142
   nodeTitle: 
@@ -296,6 +1745,145 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Perhaps you are ready to do some <color=#FF0000>business</color>
+--- !u!114 &1954859520175522398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 906fac1e-a596-42d1-af77-b202834bd3b8
+  rect:
+    serializedVersion: 2
+    x: 51259.2
+    y: 50714.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 6480489944730014149}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'To already have an abundance of the product at hand. There is always
+    time to learn how to cook.
+
+'
+--- !u!114 &2129554786417708904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: And not so many clients.
+  children:
+  - {fileID: 866928712763277922}
+  _uniqueId: 39766ff0-4302-4e81-b9a6-fefbf4685ec2
+--- !u!114 &2186557506847446174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Are you on some sort of a business trip?
+  children:
+  - {fileID: -5186198330329487019}
+  _uniqueId: 78cd1741-5f4d-4e5b-99e5-14dbb11f5645
+--- !u!114 &2270106723992638797
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41def35ef7ec4ad7ab95a8df4a3ca85a, type: 3}
+  m_Name: SetGlobalString
+  m_EditorClassIdentifier: 
+  _title: SetGlobalString
+  _uniqueId: 78b63bc7-6d00-4019-9e62-5386145ac402
+  _value: Correct
+  _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
+--- !u!114 &2335010967176186860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 429ef4ec-a37c-49f8-be91-36e515d1da4b
+  rect:
+    serializedVersion: 2
+    x: 51488.2
+    y: 50887.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 6480489944730014149}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "And its supplies are quite tightly regulated by the capital. But shhh\u2026"
+--- !u!114 &2494237224054602584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 1aee9947-4a81-44f2-8ade-c4107c8c096c
+  rect:
+    serializedVersion: 2
+    x: 50731.2
+    y: 50805.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -9164199087403622356}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Don\u2019t blame yourself. If we proposed a longer contract, we would
+    go into the red."
 --- !u!114 &2706136742943837722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,8 +1899,8 @@ MonoBehaviour:
   _uniqueId: cf04dac5-bc43-4183-9bf0-c4819611ced2
   rect:
     serializedVersion: 2
-    x: 51112.2
-    y: 50312.8
+    x: 50949.2
+    y: 49803.8
     width: 200
     height: 142
   nodeTitle: 
@@ -343,6 +1931,71 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 91e685b0a53786946bc44e6a6f504f2f, type: 2}
   _comparison: 0
   _value: 1
+--- !u!114 &3276100238956660311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a63d4d1d-03da-4667-8fc8-5f8715892c03
+  rect:
+    serializedVersion: 2
+    x: 52935.2
+    y: 50470.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 5599478769740093709}
+  - {fileID: -8455922256819148950}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "You\u2019re an innkeeper. Judging by the quality food - an innkeeper
+    with experience. How many years for a pact do you think is good enough to make
+    a trade?"
+--- !u!114 &3624409731787718823
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c15c982b88481780c0df4b164b2119, type: 3}
+  m_Name: IsGlobalString
+  m_EditorClassIdentifier: 
+  _title: IsGlobalString
+  _uniqueId: 8c5b68f1-e298-4876-bf52-f475b730c628
+  _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
+  _comparison: 0
+  _value: Correct
+--- !u!114 &4029679274297411357
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: "I\u2019m in."
+  children:
+  - {fileID: -6929532111613177006}
+  _uniqueId: 602dfc88-f5ad-47b0-9172-715457eb1cf1
 --- !u!114 &4580744804212449303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,8 +2011,8 @@ MonoBehaviour:
   _uniqueId: 2c45472b-75e9-4788-ad75-9b101f5cbd41
   rect:
     serializedVersion: 2
-    x: 50450.2
-    y: 50065.8
+    x: 50459.2
+    y: 49772.8
     width: 200
     height: 182
   nodeTitle: 
@@ -373,6 +2026,36 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: would you mind returning back all my <color=#FF0000>coins</color>?
+--- !u!114 &4813140899157963926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: ca558e95-e416-482e-a404-0c8be319e4d0
+  rect:
+    serializedVersion: 2
+    x: 51649.2
+    y: 51208.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 9010377829648569636}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: That guy just got a 4-year supply of octopus tentacles. Quite an elite
+    metropolitan delicacy, I would say.
 --- !u!114 &5123321008799034219
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -404,8 +2087,8 @@ MonoBehaviour:
   _uniqueId: d8e32540-d37b-4d9c-a3a3-57845648aa26
   rect:
     serializedVersion: 2
-    x: 50807.2
-    y: 50273.8
+    x: 50711.2
+    y: 49958.8
     width: 200
     height: 182
   nodeTitle: 
@@ -436,6 +2119,22 @@ MonoBehaviour:
   children:
   - {fileID: 1851670080156350896}
   _uniqueId: 1f66b666-2ef2-4dce-a957-213c8eb19967
+--- !u!114 &5599478769740093709
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Probably one, two years so that the inn could have a stable supply.
+  children:
+  - {fileID: -2044922395664775490}
+  _uniqueId: 678e9b58-14c3-4c01-b0c7-e404e8e54180
 --- !u!114 &5804991410437517792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,8 +2150,8 @@ MonoBehaviour:
   _uniqueId: b953301a-3c41-4c50-813a-e8aa7d48d514
   rect:
     serializedVersion: 2
-    x: 50465.2
-    y: 50485.8
+    x: 50457.2
+    y: 50116.8
     width: 200
     height: 162
   nodeTitle: 
@@ -465,6 +2164,95 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Well, I am not
+--- !u!114 &5823747910950835595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: aacd5b7e-4eb4-4db4-bab7-69f8fde2b075
+  rect:
+    serializedVersion: 2
+    x: 53131.2
+    y: 50847.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: 7965261114348024938}
+  - {fileID: -4404419721091860154}
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Thanks!
+--- !u!114 &6379800723111880664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: dcee1fae-f1f7-4ca2-860d-aee2f178da0c
+  rect:
+    serializedVersion: 2
+    x: 50490.2
+    y: 50341.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -1063923047592724484}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "I won't even ask how you got it and why. I\u2019m here just to relax
+    a bit."
+--- !u!114 &6480489944730014149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: f7e7b881-d239-48e8-be1b-ee1ab7c2301a
+  rect:
+    serializedVersion: 2
+    x: 51746.2
+    y: 50798.8
+    width: 200
+    height: 162
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -8247954997658397801}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Whatever. You know what? I have a barrel of tentacles with me.
 --- !u!114 &6640134401428776868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,8 +2268,8 @@ MonoBehaviour:
   _uniqueId: a3497e95-35de-4b3f-8a05-b662e9891f03
   rect:
     serializedVersion: 2
-    x: 50221.2
-    y: 50068.8
+    x: 50230.2
+    y: 49775.8
     width: 200
     height: 182
   nodeTitle: 
@@ -496,6 +2284,67 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: <color=#FF0000>Hello</color> tiny rabbit!
+--- !u!114 &7031139580358256112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Hey, how's it going?
+  children:
+  - {fileID: -3079132226533676308}
+  _uniqueId: 0988b80f-8bdd-4a96-a768-291af5dfb545
+--- !u!114 &7552969389912260000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: What are you going to do now?
+  children:
+  - {fileID: -3230375633732825152}
+  _uniqueId: bdd934ba-1def-46a8-930a-c56b7e853476
+--- !u!114 &7578737379681095422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 77857a13-d11f-4cb2-8e0d-562d88c95a18
+  rect:
+    serializedVersion: 2
+    x: 51254.2
+    y: 50883.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 2335010967176186860}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Yeah, quite an elite metropolitan delicacy, I would say.
 --- !u!114 &7900422330110402728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -512,3 +2361,108 @@ MonoBehaviour:
   children:
   - {fileID: 4580744804212449303}
   _uniqueId: 664b11f5-4d7d-49dc-8aa7-f52cd415ee6b
+--- !u!114 &7965261114348024938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41def35ef7ec4ad7ab95a8df4a3ca85a, type: 3}
+  m_Name: SetGlobalString
+  m_EditorClassIdentifier: 
+  _title: SetGlobalString
+  _uniqueId: 67637508-33ca-41f3-b6d8-b7e877dca0ad
+  _value: EndWithContract
+  _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
+--- !u!114 &8092311955299863362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Octopus tentacles?
+  children:
+  - {fileID: 7578737379681095422}
+  _uniqueId: df6c6c2a-29ba-4101-9754-1cf6616377db
+--- !u!114 &8400349191019136951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 12721237-432f-46d7-ba8b-d5b3ef11340d
+  rect:
+    serializedVersion: 2
+    x: 50938.2
+    y: 51146.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 694922368145171322}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: Unlike many tipplers here, I usually remember my booze evenings.
+--- !u!114 &9010377829648569636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: c9bf9425-87d0-423a-ade3-d1458e1ce563
+  rect:
+    serializedVersion: 2
+    x: 51941.2
+    y: 51189.8
+    width: 200
+    height: 162
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 2129554786417708904}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "I really love Ternopil. It\u2019s so quiet and peaceful here."
+--- !u!114 &9152341576219330942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861d683e444287d41a7220899566493c, type: 3}
+  m_Name: SignContractAction
+  m_EditorClassIdentifier: 
+  _title: SignContractAction
+  _uniqueId: 9344891d-3a22-41da-91ae-6f5917965c7c
+  contract: {fileID: 11400000, guid: e3ccc82e50502c242bb28337b703e98e, type: 2}
