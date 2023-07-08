@@ -31,6 +31,7 @@ public class VisitorQueue : MonoBehaviour {
         }
 
         if(phase.enabled){
+            available = QueryAvailable();
             StartCoroutine(SpawnCommonVisitors(commonVisitors));
             StartCoroutine(SpawnUniqueVisitors(uniqueVisitors));
         }
@@ -87,5 +88,38 @@ public class VisitorQueue : MonoBehaviour {
             }
         if(options.Count == 0) return null;
         return options[Random.Range(0, options.Count)];
+    }
+
+    public Item[] available;
+
+    public Item[] QueryAvailable(){
+        var sources = FindObjectsByType<Dispenser>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+        var transforms = FindObjectsByType<CraftingDevice>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+
+        var set = new Dictionary<Item, bool>();
+        foreach(var raw in sources) set.Add(raw.Item, true);
+
+        var recipes = new List<CraftingDevice.CraftingRecipe>();
+        foreach(var transform in transforms)
+            foreach(var recipe in transform.recipes) recipes.Add(recipe);
+
+        //TODO optimize naive approach
+        while(true){
+            int revealed = 0;
+            for(int i = recipes.Count - 1; i >= 0; i--){
+                var recipe = recipes[i];
+                var available = System.Array.TrueForAll(recipe.inputList, item => set.ContainsKey(item));
+                if(available){
+                    set.Add(recipe.output, true);
+                    recipes.RemoveAt(i);
+                    revealed++;
+                }
+            }
+            if(revealed == 0) break;
+        }
+
+        Item[] items = new Item[set.Keys.Count];
+        set.Keys.CopyTo(items, 0);
+        return items;
     }
 }

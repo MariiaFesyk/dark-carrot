@@ -93,7 +93,11 @@ public class Visitor : Interactable {
 
     private void GenerateOrder(){
         agent.OnFinished -= GenerateOrder;
-        order = orders[Random.Range(0, orders.Length)];
+        var availableOrders = System.Array.FindAll(orders, order => 
+            System.Array.Exists(queue.available, item => order.Validate(item))
+        );
+
+        order = availableOrders[Random.Range(0, availableOrders.Length)];
         SetCoroutine(AwaitingOrderCoroutine(order));
     }
 
