@@ -43,7 +43,7 @@ MonoBehaviour:
   - {fileID: 2643995643761379252}
   - {fileID: 1012224812935662266}
   root: {fileID: -7368179886888609532}
-  scrollPosition: {x: 49910.2, y: 50010.1}
+  scrollPosition: {x: 49912.2, y: 50012.1}
 --- !u!114 &935555619982395258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -87,7 +87,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: c7925f1f781ae3d41bedb969b2e5a24c, type: 2}
   audio: {fileID: 0}
-  dialogue: Remind me to never get that <color=#FF0000>low</color>.
+  dialogue: Remind me to never get that <color=#5a1616>low</color>.
 --- !u!114 &2643995643761379252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: c7925f1f781ae3d41bedb969b2e5a24c, type: 2}
   audio: {fileID: 0}
-  dialogue: You <color=#FF0000>brainless rat</color>! As if I can't see for myself.
+  dialogue: You <color=#5a1616>brainless rat</color>! As if I can't see for myself.
 --- !u!114 &4916874156793356822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
     x: 50267.2
     y: 50075.8
     width: 200
-    height: 178
+    height: 182
   nodeTitle: 
   children: []
   conditions: []
@@ -145,7 +145,7 @@ MonoBehaviour:
   - {fileID: 6388249048868396707}
   actor: {fileID: 11400000, guid: c7925f1f781ae3d41bedb969b2e5a24c, type: 2}
   audio: {fileID: 0}
-  dialogue: What? Are you telling me I am still in this <color=#FF0000>rabbit hole</color>?
+  dialogue: What? Are you telling me I am still in this <color=#5a1616>rabbit hole</color>?
 --- !u!114 &6388249048868396707
 MonoBehaviour:
   m_ObjectHideFlags: 1
