@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: D_Carrot
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 
-  <Icon>k__BackingField: {fileID: -8803384838731599092, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  <Icon>k__BackingField: {fileID: 21300000, guid: e5f83fa3e9e8b0643ad8375131e2840d, type: 3}
   cost: 10
   <Tags>k__BackingField: []

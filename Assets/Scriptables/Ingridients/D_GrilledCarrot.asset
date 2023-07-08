@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: D_GrilledCarrot
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 
-  <Icon>k__BackingField: {fileID: -4743461557108310681, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  <Icon>k__BackingField: {fileID: 21300000, guid: 69a692445c7566b46a8db1eb0e5d4380, type: 3}
   cost: 25
   <Tags>k__BackingField:
   - {fileID: 11400000, guid: ade84d567bec84944ba57e0272597e53, type: 2}

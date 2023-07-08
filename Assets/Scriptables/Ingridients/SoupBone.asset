@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SoupBone
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Bone Porige
-  <Icon>k__BackingField: {fileID: 8109285937902493632, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  <Icon>k__BackingField: {fileID: 21300000, guid: 8dca1741df14eab42ad3008eaf0406d1, type: 3}
   cost: 2
   <Tags>k__BackingField:
   - {fileID: 11400000, guid: b9ee65f551630744497fe3dd3159a3dc, type: 2}

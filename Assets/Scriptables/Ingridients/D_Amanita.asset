@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: D_Amanita
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 
-  <Icon>k__BackingField: {fileID: -93843221069247800, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  <Icon>k__BackingField: {fileID: 21300000, guid: 309ce106c04f85746a5e3d60da951134, type: 3}
   cost: 5
   <Tags>k__BackingField: []

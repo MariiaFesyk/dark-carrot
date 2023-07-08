@@ -13,7 +13,7 @@ public class Contamination : Interactable {
     private float percent = 0f;
 
     public override bool CanInteract(InteractionController interacting){
-		if(percent < 0f) return false;
+		if(percent < 1f) return false;
 		
         var holder = interacting.GetComponent<ItemHolder>();
         if(!holder) return false;
