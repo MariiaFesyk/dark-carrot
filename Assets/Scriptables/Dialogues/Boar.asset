@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Boar
   m_EditorClassIdentifier: 
   _displayName: Boaris
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: f76103e9c5b86e44fa2fbb696dae6036, type: 3}

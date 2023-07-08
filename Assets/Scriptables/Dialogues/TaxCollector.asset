@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TaxCollector
   m_EditorClassIdentifier: 
   _displayName: Tax Collector
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: e6e8786fe6a4aa442a0777ce29a5cfe7, type: 3}

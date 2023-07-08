@@ -1,12 +1,18 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(menuName = "Gameplay/Contract", fileName = "New Contract")]
 public class Contract : ScriptableObject {
-    [SerializeField] public string header;
-    [SerializeField, TextArea] public string conditions;
-    [SerializeField, TextArea] public string obligations;
+    [SerializeField] public GameObject prefab;
+
+    public event UnityAction OnChange;
 
     public ContractStatus status = ContractStatus.None;
+
+    public void Sign(){
+        status = ContractStatus.Signed;
+        OnChange?.Invoke();
+    }
 
     void OnEnable(){
         status = ContractStatus.None;

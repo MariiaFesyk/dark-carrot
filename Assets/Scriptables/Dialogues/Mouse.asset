@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Mouse
   m_EditorClassIdentifier: 
   _displayName: Clara
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: 438991650699d7040abacf831e416db0, type: 3}

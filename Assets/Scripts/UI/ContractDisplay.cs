@@ -2,19 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using TMPro;
+using UnityEngine.UI;
 
 public class ContractDisplay : MonoBehaviour {
-    [SerializeField] private TMP_Text header;
-    [SerializeField] private TMP_Text conditions;
-    [SerializeField] private TMP_Text obligations;
     private Contract currentContract;
     [HideInInspector] public UnityAction callback;
 
     public void Sign(){
         Hide();
 
-        currentContract.status = Contract.ContractStatus.Signed;
+        currentContract.Sign();
         currentContract = null;
 
         callback?.Invoke();
@@ -25,11 +22,12 @@ public class ContractDisplay : MonoBehaviour {
 
         currentContract = contract;
 
-        header.text = contract.header;
-        conditions.text = contract.conditions;
-        obligations.text = contract.obligations;
+        var view = Instantiate(contract.prefab, transform);
+        var button = view.GetComponentInChildren<Button>();
+        button.onClick.AddListener(Sign);
     }
     public void Hide(){
+        foreach(Transform child in transform) Destroy(child.gameObject);
         gameObject.SetActive(false);
     }
 

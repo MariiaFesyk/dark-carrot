@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e65417332495340a9c5798ecbe0ac4, type: 3}
   m_Name: DebtContract
   m_EditorClassIdentifier: 
-  header: Deep in Debt
-  conditions: Pay up 10000 coins in total.
-  obligations: Will no longer be constraint within the confinement of workplace.
+  prefab: {fileID: 7307193518374153521, guid: bdc6a9bc7c99b1741a093f689ce01a16, type: 3}
   status: 0

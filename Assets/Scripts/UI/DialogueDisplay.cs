@@ -13,7 +13,6 @@ using TMPro;
 
 public class DialogueDisplay : MonoBehaviour {
     [SerializeField] private PlayerInput inputSystem;
-    [SerializeField] private float typingSpeed;
     [SerializeField] private ContractDisplay contractController;
 	
     private DialogueController dialogueController;
@@ -21,9 +20,13 @@ public class DialogueDisplay : MonoBehaviour {
     public DialogueGraph dialogue;
 
     [Header("UI")]
-    [SerializeField] private TMP_Text lines;
-    [SerializeField] private RectTransform optionsList;
+    [SerializeField] private float typingSpeed;
+    [SerializeField] private RectTransform view;
+    [SerializeField] private GameObject messagePrefab;
     [SerializeField] private DialogueOptionDisplay optionPrefab;
+
+    [Header("Character")]
+    [SerializeField] private Image character;
 
     public UnityEvent OnDialogOpened = new UnityEvent();
     public UnityEvent OnDialogClosed = new UnityEvent();
@@ -35,18 +38,19 @@ public class DialogueDisplay : MonoBehaviour {
 
         dialogueController.Events.Speak.AddListener((actor, text) => {
             if(actor == null) return;
-            foreach(Transform child in optionsList) Destroy(child.gameObject);
-            StartCoroutine(DisplayText(actor.DisplayName, text, true));
+
+            if(actor.Portrait != null) character.sprite = actor.Portrait; //TODO assign at start
+            StartCoroutine(DisplayMessage(
+                $"<size=120%>{actor.DisplayName}:</size> {text}", null
+            ));
         });
         dialogueController.Events.Choice.AddListener((actor, text, choices) => {
             if(actor == null) return;
-            foreach(Transform child in optionsList) Destroy(child.gameObject);
-            StartCoroutine(DisplayText(actor.DisplayName, text, false));
-            foreach(var choice in choices){
-                var option = Instantiate(optionPrefab, optionsList);
-                option.title.text = choice.Text;
-                option.clickEvent.AddListener(dialogueController.SelectChoice);
-            }
+
+            if(actor.Portrait != null) character.sprite = actor.Portrait; //TODO assign at start
+            StartCoroutine(DisplayMessage(
+                $"<size=120%>{actor.DisplayName}:</size> {text}", choices.ConvertAll(choice => choice.Text).ToArray()
+            ));
         });
         dialogueController.Events.End.AddListener(CloseDialogue);
         dialogueController.Events.NodeEnter.AddListener((node) => {
@@ -78,6 +82,8 @@ public class DialogueDisplay : MonoBehaviour {
         OnDialogClosed.Invoke();
         DialogCallback?.Invoke();
         DialogCallback = null;
+
+        foreach(Transform child in view) Destroy(child.gameObject);
     }
 
     public void OpenDialogue(DialogueGraph dialogue){
@@ -90,25 +96,36 @@ public class DialogueDisplay : MonoBehaviour {
         dialogueController.Play(dialogue, gameObjectOverrides.ToArray<IGameObjectOverride>());
     }
 
-    private IEnumerator DisplayText(string actor, string text, bool autoprogress){
-        lines.text = $"<size=120%>{actor}:</size> {text}";
-		lines.maxVisibleCharacters = 0;
-		lines.ForceMeshUpdate();
-		var content = lines.GetParsedText();
+    private IEnumerator DisplayMessage(string message, string[] options){
+        var box = Instantiate(messagePrefab, view);
+        var lines = box.GetComponentInChildren<TMP_Text>();
+        lines.text = message;
+        LayoutRebuilder.ForceRebuildLayoutImmediate(view.parent as RectTransform);
 
-        for(float elapsed = 0f; lines.maxVisibleCharacters < content.Length; elapsed += Time.unscaledDeltaTime){
+        lines.maxVisibleCharacters = 0;
+        lines.ForceMeshUpdate();
+        var contentLength = lines.GetParsedText().Length;
+
+        for(float elapsed = 0f; lines.maxVisibleCharacters < contentLength; elapsed += Time.unscaledDeltaTime){
             yield return null;
             lines.maxVisibleCharacters = 
-            typingSpeed == 0f ? content.Length :
-            Mathf.Min(content.Length, Mathf.FloorToInt(elapsed / typingSpeed));
+            typingSpeed == 0f ? contentLength :
+            Mathf.Min(contentLength, Mathf.FloorToInt(elapsed / typingSpeed));
         }
 
-        if(autoprogress){
+        if(options == null){
             //TODO use new input system
             while (!Input.GetMouseButtonDown(0) && !Input.GetKeyDown(KeyCode.Space)) {
                 yield return null;
             }
             dialogueController.Next();
+        }else{
+            for(int i = 0; i < options.Length; i++){
+                var option = Instantiate(optionPrefab, view);
+                option.message.text = options[i];
+                option.index = i;
+                option.clickEvent.AddListener(dialogueController.SelectChoice);
+            }
         }
     }
 
