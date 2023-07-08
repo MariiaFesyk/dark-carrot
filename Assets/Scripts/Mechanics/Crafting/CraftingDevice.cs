@@ -39,7 +39,7 @@ public class CraftingDevice : Interactable {
         Finished,
     }
 
-    [SerializeField] private List<CraftingRecipe> recipes = new();
+    [SerializeField] public List<CraftingRecipe> recipes = new();
     [SerializeField] private Item placeholder;
     [SerializeField] private Image progressIndicator;
 

@@ -4,6 +4,8 @@ using UnityEngine;
 public class Dispenser : Interactable {
     [SerializeField] private bool refund;
 
+    public Item Item => GetComponent<ItemHolder>().Item;
+
     public override bool CanInteract(InteractionController interacting){
         var holder = interacting.GetComponent<ItemHolder>();
         var item = GetComponent<ItemHolder>().Item;
