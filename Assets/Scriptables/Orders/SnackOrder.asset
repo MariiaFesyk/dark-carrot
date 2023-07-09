@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df17d8cea3ebf6d40aa6b5809bf31d15, type: 3}
+  m_Name: SnackOrder
+  m_EditorClassIdentifier: 
+  <Duration>k__BackingField: 40
+  tags:
+  - {fileID: 11400000, guid: ade84d567bec84944ba57e0272597e53, type: 2}
+  icon: {fileID: 0}
+  rewards:
+  - resource: {fileID: 11400000, guid: 9ae9b3f7466e1134c8585bee9e630876, type: 2}
+    amount: 0
+    multiplier: 1

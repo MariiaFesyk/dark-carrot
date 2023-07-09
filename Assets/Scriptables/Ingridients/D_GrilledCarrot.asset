@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bfd423ab98701843931b12b8aa9ef24, type: 3}
+  m_Name: D_GrilledCarrot
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <Icon>k__BackingField: {fileID: 21300000, guid: 69a692445c7566b46a8db1eb0e5d4380, type: 3}
+  cost: 25
+  <Tags>k__BackingField:
+  - {fileID: 11400000, guid: ade84d567bec84944ba57e0272597e53, type: 2}
+  - {fileID: 11400000, guid: 4750e03c62130294fb4799a4afea8b1e, type: 2}

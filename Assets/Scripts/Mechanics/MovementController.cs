@@ -59,7 +59,15 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
     private bool pressed = false;
     public void OnTargetMove(InputAction.CallbackContext context){
         Vector2 target = context.ReadValue<Vector2>();
-        if(Camera.main) targetPosition = Camera.main.ScreenToWorldPoint(target);
+        if(Camera.main){
+            var ndc = Camera.main.ScreenToViewportPoint(target);
+            if(ndc.x < 0 || ndc.x > 1 || ndc.y < 0 || ndc.y > 1){
+                pressed = false;
+                return;
+            }
+            
+            targetPosition = Camera.main.ScreenToWorldPoint(target);
+        }
     }
     public void OnTargetTrigger(InputAction.CallbackContext context){
         if(context.performed) pressed = true;

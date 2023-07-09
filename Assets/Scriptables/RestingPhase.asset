@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56733887ef1aa5e43be3f7a0ed20233a, type: 3}
+  m_Name: RestingPhase
+  m_EditorClassIdentifier: 
+  title: Resting Phase
+  duration: 0
+  nextPhase: {fileID: 11400000, guid: 3cbb9821da4095147a5963004ec0eac7, type: 2}
+  enabled: 0
+  timeScale: 1

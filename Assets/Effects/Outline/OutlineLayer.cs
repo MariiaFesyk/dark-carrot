@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Canvas))]
 public class OutlineLayer : MonoBehaviour {
     [SerializeField] private ObjectSet layerSet;
-    [SerializeField] private Vector3 sortingAxis = Vector3.forward;
     [SerializeField] private int layer;
     private Canvas canvas;
     private float depth = 0f;
+    private Vector3 sortingAxis => GraphicsSettings.transparencySortAxis;
 
     void OnEnable(){
         canvas = GetComponent<Canvas>();

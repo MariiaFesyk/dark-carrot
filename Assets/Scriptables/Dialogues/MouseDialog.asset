@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7368179886888609532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: dc3c62b3-c07e-4f9b-9bd1-930639fae3e5
+  rect:
+    serializedVersion: 2
+    x: 50050
+    y: 50200
+    width: 100
+    height: 58
+  nodeTitle: 
+  children:
+  - {fileID: 4916874156793356822}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: MouseDialog
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -7368179886888609532}
+  - {fileID: 4916874156793356822}
+  - {fileID: 2643995643761379252}
+  - {fileID: 1012224812935662266}
+  root: {fileID: -7368179886888609532}
+  scrollPosition: {x: 49912.2, y: 50012.1}
+--- !u!114 &935555619982395258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Yes, madam
+  children:
+  - {fileID: 1012224812935662266}
+  _uniqueId: 532c3185-8ca5-479c-ba79-8601f30c3e35
+--- !u!114 &1012224812935662266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 40afc502-4b41-43b1-8bc0-e1a8e5984fd6
+  rect:
+    serializedVersion: 2
+    x: 50610.2
+    y: 50051.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: c7925f1f781ae3d41bedb969b2e5a24c, type: 2}
+  audio: {fileID: 0}
+  dialogue: Remind me to never get that <color=#5a1616>low</color>.
+--- !u!114 &2643995643761379252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 79bdc900-39a1-4d6c-aa7b-f575bb1a309f
+  rect:
+    serializedVersion: 2
+    x: 50608.2
+    y: 50244.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: c7925f1f781ae3d41bedb969b2e5a24c, type: 2}
+  audio: {fileID: 0}
+  dialogue: You <color=#5a1616>brainless rat</color>! As if I can't see for myself.
+--- !u!114 &4916874156793356822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: f83fe6ed-74e6-49a3-a365-835bf8cf19ef
+  rect:
+    serializedVersion: 2
+    x: 50267.2
+    y: 50075.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 935555619982395258}
+  - {fileID: 6388249048868396707}
+  actor: {fileID: 11400000, guid: c7925f1f781ae3d41bedb969b2e5a24c, type: 2}
+  audio: {fileID: 0}
+  dialogue: What? Are you telling me I am still in this <color=#5a1616>rabbit hole</color>?
+--- !u!114 &6388249048868396707
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: No
+  children:
+  - {fileID: 2643995643761379252}
+  _uniqueId: e895f052-06c3-4efc-9f57-ba5a8dc98ebe

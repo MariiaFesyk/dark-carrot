@@ -18,6 +18,7 @@ public class ObjectSet : ScriptableObject, IEnumerable<GameObject> {
         if(gameObjects.Remove(gameObject))
             OnRemove?.Invoke(gameObject);
     }
+    public bool Contains(GameObject gameObject) => gameObjects.Contains(gameObject);
 
     public IEnumerator<GameObject> GetEnumerator() => gameObjects.GetEnumerator();
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();

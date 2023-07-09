@@ -1,27 +1,25 @@
 using UnityEngine;
 
-[DisallowMultipleComponent, RequireComponent(typeof(Collider2D))]
 public abstract class Interactable : MonoBehaviour {
+    [field: SerializeField] public int priority { get; private set; }
+
+    //TODO move into "Highlight" component?
     [SerializeField] private ObjectSet layerSet;
-    
-    private void OnTriggerEnter2D(Collider2D collider){
-        if(!collider.CompareTag("Player")) return;
-        var interacting = collider.GetComponent<InteractionController>();
-        interacting?.OnInteractableEnter(this);
-    }
-    private void OnTriggerExit2D(Collider2D collider){
-        if(!collider.CompareTag("Player")) return;
-        var interacting = collider.GetComponent<InteractionController>();
-        interacting?.OnInteractableExit(this);
+    public virtual bool highlight {
+        get => layerSet?.Contains(gameObject) == true;
+        set {
+            if(value) layerSet?.Add(gameObject);
+            else layerSet?.Remove(gameObject);
+        }
     }
 
-    public virtual void SetHighlight(bool highlight){
-        if(highlight) layerSet?.Add(gameObject);
-        else layerSet?.Remove(gameObject);
-    }
     protected virtual void OnDestroy(){
         layerSet?.Remove(gameObject);
     }
+
+    public virtual void OnInteractableEnter(Collider2D collider){}
+    public virtual void OnInteractableExit(Collider2D collider){}
+    public virtual void OnTriggerStay2D(Collider2D collider){}
 
     public abstract bool CanInteract(InteractionController interacting);
     public abstract void OnInteraction(InteractionController interacting);

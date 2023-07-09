@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: RawBone
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Bone
-  <Icon>k__BackingField: {fileID: 6310394802952429925, guid: 5c767cbec0e03e344ae97c041c29403a, type: 3}
+  <Icon>k__BackingField: {fileID: 21300000, guid: 63c3cb1a149126947b49f0f5fb637071, type: 3}
+  cost: 0
   <Tags>k__BackingField: []
