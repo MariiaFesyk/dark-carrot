@@ -15,8 +15,8 @@ MonoBehaviour:
   _uniqueId: ae51a4af-3fee-4326-bcea-1ae67aaeea53
   rect:
     serializedVersion: 2
-    x: 51000.2
-    y: 50709.8
+    x: 51031.2
+    y: 50724.8
     width: 200
     height: 182
   nodeTitle: 
@@ -62,8 +62,8 @@ MonoBehaviour:
   _uniqueId: 33e0e54c-0b4b-49a9-9e1b-d30dc4ae5215
   rect:
     serializedVersion: 2
-    x: 50730.2
-    y: 50637.8
+    x: 50821.2
+    y: 50633.8
     width: 200
     height: 142
   nodeTitle: 
@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: "Four years won\u2019t make you go broke. I guarantee."
+  text: Probably two years so that the inn could have a stable supply.
   children:
-  - {fileID: -5384101955371572553}
+  - {fileID: -2044922395664775490}
   _uniqueId: 294e471c-f41a-4a4c-bd46-b88982352ab2
 --- !u!114 &-8247954997658397801
 MonoBehaviour:
@@ -191,14 +191,14 @@ MonoBehaviour:
     height: 142
   nodeTitle: 
   children:
-  - {fileID: -5652393571879073893}
+  - {fileID: 5588882299963184220}
   conditions: []
   enterActions: []
   exitActions: []
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Great. And the barrel is already in your kitchen, by the way.
+  dialogue: Nice. And the barrel is already in your kitchen, by the way.
 --- !u!114 &-6700599018620228861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +229,35 @@ MonoBehaviour:
   audio: {fileID: 0}
   dialogue: But you cook better. Probably. I decided to dine not where I have to
     do my business.
+--- !u!114 &-6290092324180496050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 79234253-eb36-45dc-b90c-a3be9fc3c912
+  rect:
+    serializedVersion: 2
+    x: 53474.2
+    y: 50543.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "I\u2019ll enjoy my last mug and leave. There\u2019s another business
+    here waiting for me.\r\n"
 --- !u!114 &-6104042352647685693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +318,22 @@ MonoBehaviour:
   children:
   - {fileID: -8747324031844764026}
   _uniqueId: 5144098e-523b-4048-b93c-e6685c503fd7
+--- !u!114 &-5872579847515806210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: What's happened? Is it because of the deal?
+  children:
+  - {fileID: -3079132226533676308}
+  _uniqueId: 480a63f9-466d-4689-9007-b132cba83cc4
 --- !u!114 &-5658170333145518641
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,8 +365,8 @@ MonoBehaviour:
   _uniqueId: 04fcd772-bd13-4f44-82a2-dbcc23c2c976
   rect:
     serializedVersion: 2
-    x: 52666.2
-    y: 50847.8
+    x: 52661.2
+    y: 50843.8
     width: 200
     height: 142
   nodeTitle: 
@@ -333,7 +378,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Now sign this contract, please.
+  dialogue: All we need now is to sign this contract, please.
 --- !u!114 &-5384101955371572553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +399,8 @@ MonoBehaviour:
     width: 200
     height: 142
   nodeTitle: 
-  children: []
+  children:
+  - {fileID: -6290092324180496050}
   conditions: []
   enterActions: []
   exitActions:
@@ -362,8 +408,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: "Thanks. I think your advice might work out. I\u2019ll visit you tomorrow
-    after a deal."
+  dialogue: Thanks. I think your advice might work out.
 --- !u!114 &-5304503462154427177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,8 +438,7 @@ MonoBehaviour:
   - {fileID: -304133848535384057}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: "But this contract is different. And it\u2019s not about glashtyns. We\u2019re
-    rivaling the official capital supplies."
+  dialogue: "We\u2019re rivaling the official capital supplies."
 --- !u!114 &-5243053767959245879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,7 +468,7 @@ MonoBehaviour:
   - {fileID: -4180564794691498064}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Oh, Hi!
+  dialogue: Hey, how's it going?
 --- !u!114 &-5234364402556348926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -546,21 +590,21 @@ MonoBehaviour:
   _uniqueId: f05ca249-fb3b-4dff-8e89-1fe9fbb9b734
   rect:
     serializedVersion: 2
-    x: 51949.2
-    y: 50437.8
+    x: 51954.2
+    y: 50562.8
     width: 200
     height: 142
   nodeTitle: 
   children:
-  - {fileID: -5304503462154427177}
+  - {fileID: 2696210477964528105}
   conditions: []
   enterActions: []
   exitActions: []
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: "I\u2019m working in the river agency \u201CHrunlug\u201D. If you have
-    not heard about us, then we breed glashtyns, the river horses."
+  dialogue: "I\u2019m working in the river agency \u201CHrunlug\u201D. We breed glashtyns,
+    the river horses."
 --- !u!114 &-5052985475000765968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,7 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Hey, how's it going?
+  text: All as usual.
   children:
   - {fileID: -967766281064251948}
   _uniqueId: d6edc816-799c-4548-bf29-7f1324285abe
@@ -805,6 +849,81 @@ MonoBehaviour:
   audio: {fileID: 0}
   dialogue: "I\u2019ll spend another day here. The caravan to the west comes by only
     tomorrow."
+--- !u!114 &-3230183660304042369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: b24ba605-be06-4a77-a28b-a07eaa9f7f50
+  rect:
+    serializedVersion: 2
+    x: 50748.2
+    y: 50192.8
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -43516802889172299}
+  - {fileID: -3202679890123251459}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: You cook very well. Did you work at the Briradon capital?
+--- !u!114 &-3202679890123251459
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Yes, I had an inn there. (lie)
+  children:
+  - {fileID: 7036231620220601587}
+  _uniqueId: 41e5123a-9e6d-4765-b1cb-8ee7e115e2b8
+--- !u!114 &-3110485141001431441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 52ca1aa2-ad7c-4142-ad97-04749d613409
+  rect:
+    serializedVersion: 2
+    x: 52560.2
+    y: 51024.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 5588882299963184220}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: And it is already in your kitchen, by the way.
 --- !u!114 &-3079132226533676308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,8 +939,8 @@ MonoBehaviour:
   _uniqueId: 5f2a1e57-4e77-4ed2-b253-1315891d0cac
   rect:
     serializedVersion: 2
-    x: 50481.2
-    y: 50671.8
+    x: 50589.2
+    y: 50677.8
     width: 200
     height: 182
   nodeTitle: 
@@ -834,7 +953,7 @@ MonoBehaviour:
   - {fileID: -2692897896165968944}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: "So, the deal wasn\u2019t successful. The capital had a better offer."
+  dialogue: "Yeah, the deal wasn\u2019t successful. The capital had a better offer."
 --- !u!114 &-3054529135827465756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -867,7 +986,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 50988.2
-    y: 50395.8
+    y: 50439.8
     width: 200
     height: 182
   nodeTitle: 
@@ -1039,7 +1158,8 @@ MonoBehaviour:
     width: 200
     height: 142
   nodeTitle: 
-  children: []
+  children:
+  - {fileID: -6290092324180496050}
   conditions: []
   enterActions: []
   exitActions:
@@ -1047,8 +1167,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: "Thanks. I think your advice might work out. I\u2019ll visit you tomorrow
-    after a deal."
+  dialogue: Thanks. I think your advice might work out.
 --- !u!114 &-1800322578897642713
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1065,6 +1184,36 @@ MonoBehaviour:
   children:
   - {fileID: -4987409060711602000}
   _uniqueId: 772461f4-3dc1-4874-9d2a-5182d80bdd84
+--- !u!114 &-1660205202396686275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: ac5090f8-c658-4ad6-a097-2d32218da3a2
+  rect:
+    serializedVersion: 2
+    x: 50975.2
+    y: 50148.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -1063923047592724484}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "That\u2019s a shame. Our capital looks amazing from inside. I visited
+    it dozens of times."
 --- !u!114 &-1559748306513160883
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1114,6 +1263,36 @@ MonoBehaviour:
   _uniqueId: 374d4c15-116b-42fa-b780-7eaee7ba5b66
   _value: EndWithoutContract
   _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
+--- !u!114 &-1104754592575996046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 9082df26-e0b1-44a2-980e-5150026824a0
+  rect:
+    serializedVersion: 2
+    x: 51207.2
+    y: 50170.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -1063923047592724484}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "We don\u2019t really know each other, it\u2019s expected that you wouldn\u2019t
+    be honest. Sorry."
 --- !u!114 &-1102196582411831832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1129,8 +1308,8 @@ MonoBehaviour:
   _uniqueId: 6a5c0232-96b6-4d1e-b0b0-22c932c70df7
   rect:
     serializedVersion: 2
-    x: 50226.2
-    y: 50642.8
+    x: 50051.2
+    y: 50651.8
     width: 200
     height: 162
   nodeTitle: 
@@ -1143,7 +1322,7 @@ MonoBehaviour:
   - {fileID: 7031139580358256112}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Oh, Hi!
+  dialogue: Hey, how's it going?
 --- !u!114 &-1063923047592724484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,8 +1338,8 @@ MonoBehaviour:
   _uniqueId: 513b90ef-e993-4034-82f3-69a51f71a73b
   rect:
     serializedVersion: 2
-    x: 50745.2
-    y: 50398.8
+    x: 50744.2
+    y: 50471.8
     width: 200
     height: 142
   nodeTitle: 
@@ -1172,8 +1351,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: "Today's drinks were brewed very well. Didn\u2019t think I could find
-    such a nice tavern here."
+  dialogue: "Didn\u2019t think I could find such a nice tavern in this suburb."
 --- !u!114 &-967766281064251948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1203,8 +1381,8 @@ MonoBehaviour:
   - {fileID: -7851886409442683404}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: "I have good news! We\u2019ll celebrate my successful deal! So, your
-    advice hit the spot. I made a deal."
+  dialogue: "Today\u2019s mugs were ordered to celebrate my successful deal, rabbit.
+    Thank you for your advice."
 --- !u!114 &-690789389850037245
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1251,7 +1429,7 @@ MonoBehaviour:
   - {fileID: -8762667150175232977}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: "Hey. First time here, that\u2019s a lovely inn."
+  dialogue: "Hey. First time in this lovely inn. And already drunk.\r"
 --- !u!114 &-563488044109092792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,7 +1511,7 @@ MonoBehaviour:
     height: 142
   nodeTitle: 
   children:
-  - {fileID: -1063923047592724484}
+  - {fileID: -3230183660304042369}
   conditions: []
   enterActions: []
   exitActions: []
@@ -1341,6 +1519,22 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: "I\u2019m here just to relax a bit. Never been here in Ternopil before."
+--- !u!114 &-43516802889172299
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: "No, I haven\u2019t been to Briradon a single time."
+  children:
+  - {fileID: -1660205202396686275}
+  _uniqueId: f6ce4e4a-bd43-4e9a-96d4-c2e23ee082cb
 --- !u!114 &-38602022708715793
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1426,8 +1620,18 @@ MonoBehaviour:
   - {fileID: 4813140899157963926}
   - {fileID: 9010377829648569636}
   - {fileID: 866928712763277922}
+  - {fileID: -3230183660304042369}
+  - {fileID: -1660205202396686275}
+  - {fileID: 7036231620220601587}
+  - {fileID: -1104754592575996046}
+  - {fileID: 2696210477964528105}
+  - {fileID: -6290092324180496050}
+  - {fileID: 2306784506264063480}
+  - {fileID: -3110485141001431441}
+  - {fileID: 5588882299963184220}
+  - {fileID: 3650356702864576706}
   root: {fileID: 1532999317496806401}
-  scrollPosition: {x: 49905.465, y: 50127.9}
+  scrollPosition: {x: 52361.465, y: 50758.9}
 --- !u!114 &180139097645873057
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1564,8 +1768,24 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Decent inflow for a little inn like this one. I enjoyed my time here.
-    Time to go, I have another little business here. Goodbye!
+  dialogue: "Decent inflow for a little inn like this one. Good luck with it, little
+    rabbit.\r"
+--- !u!114 &881995570302824063
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: About what then?
+  children:
+  - {fileID: -5304503462154427177}
+  _uniqueId: bd5dd96d-1cfc-41e2-a409-3279cc5cb4be
 --- !u!114 &1011898616185056121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1611,21 +1831,20 @@ MonoBehaviour:
   _uniqueId: e9bff229-eeb7-490a-a2d3-e2cb1a383c3e
   rect:
     serializedVersion: 2
-    x: 52424.2
-    y: 50940.8
+    x: 52332.2
+    y: 51020.8
     width: 200
     height: 142
   nodeTitle: 
   children:
-  - {fileID: -5652393571879073893}
+  - {fileID: -3110485141001431441}
   conditions: []
   enterActions: []
   exitActions: []
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Yeah. At least, you can have this barrel. The tentacles would be delivered
-    tomorrow.
+  dialogue: "Yeah. At least, you can have this barrel, I don\u2019t need it."
 --- !u!114 &1217141244836673112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1654,8 +1873,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Gut brought it with me so that stupid innkeeper could check the quality
-    of our product.
+  dialogue: Guts gave it to me so that stupid innkeeper could check the quality of
+    our product.
 --- !u!114 &1532999317496806401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1825,6 +2044,37 @@ MonoBehaviour:
   _uniqueId: 78b63bc7-6d00-4019-9e62-5386145ac402
   _value: Correct
   _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
+--- !u!114 &2306784506264063480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: af5be391-a87e-4697-aeba-b5ae069002b2
+  rect:
+    serializedVersion: 2
+    x: 50321.2
+    y: 50675.8
+    width: 200
+    height: 162
+  nodeTitle: 
+  children:
+  - {fileID: -3079132226533676308}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -5872579847515806210}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: I wish I could drink more, but I will be boozy as Hell after another
+    mug.
 --- !u!114 &2335010967176186860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1869,8 +2119,8 @@ MonoBehaviour:
   _uniqueId: 1aee9947-4a81-44f2-8ade-c4107c8c096c
   rect:
     serializedVersion: 2
-    x: 50731.2
-    y: 50805.8
+    x: 50820.2
+    y: 50801.8
     width: 200
     height: 142
   nodeTitle: 
@@ -1884,6 +2134,35 @@ MonoBehaviour:
   audio: {fileID: 0}
   dialogue: "Don\u2019t blame yourself. If we proposed a longer contract, we would
     go into the red."
+--- !u!114 &2696210477964528105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 62ae9570-11ec-4611-9e5d-5eec027e9ea6
+  rect:
+    serializedVersion: 2
+    x: 51953.2
+    y: 50333.8
+    width: 200
+    height: 162
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 881995570302824063}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: But this contract is not about glashtyns.
 --- !u!114 &2706136742943837722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1914,6 +2193,22 @@ MonoBehaviour:
   audio: {fileID: 0}
   dialogue: We can disscuss our business plan later, if you wish. I have some mindblowing
     stuff.
+--- !u!114 &2754700531060242620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: You really insisted.
+  children:
+  - {fileID: -5652393571879073893}
+  _uniqueId: 8e7f4115-744a-4f33-a7fc-76e51656d84f
 --- !u!114 &2882519775046696422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1949,7 +2244,7 @@ MonoBehaviour:
     x: 52935.2
     y: 50470.8
     width: 200
-    height: 182
+    height: 202
   nodeTitle: 
   children: []
   conditions: []
@@ -1958,6 +2253,7 @@ MonoBehaviour:
   choices:
   - {fileID: 5599478769740093709}
   - {fileID: -8455922256819148950}
+  - {fileID: 8505644457295045488}
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: "You\u2019re an innkeeper. Judging by the quality food - an innkeeper
@@ -1980,6 +2276,35 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 0915d9083a101c24b8e47ec26f65d870, type: 2}
   _comparison: 0
   _value: Correct
+--- !u!114 &3650356702864576706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4634fcaf-bee6-4d2d-b2d7-db156b50fc64
+  rect:
+    serializedVersion: 2
+    x: 53062.2
+    y: 51015.8
+    width: 200
+    height: 162
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 2754700531060242620}
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: So we made a deal, right?
 --- !u!114 &4029679274297411357
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2119,6 +2444,35 @@ MonoBehaviour:
   children:
   - {fileID: 1851670080156350896}
   _uniqueId: 1f66b666-2ef2-4dce-a957-213c8eb19967
+--- !u!114 &5588882299963184220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 759c59fd-5dcc-4385-8d4e-557d85921673
+  rect:
+    serializedVersion: 2
+    x: 52806.2
+    y: 51027.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 3650356702864576706}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "I\u2019m confident you can cook some quality meals with these tentacles."
 --- !u!114 &5599478769740093709
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2131,7 +2485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Probably one, two years so that the inn could have a stable supply.
+  text: A year would be enough to try.
   children:
   - {fileID: -2044922395664775490}
   _uniqueId: 678e9b58-14c3-4c01-b0c7-e404e8e54180
@@ -2193,7 +2547,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
-  dialogue: Thanks!
+  dialogue: "Thanks. Enjoy your octopus tentacles, little rabbit.\r"
 --- !u!114 &6379800723111880664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,7 +2569,7 @@ MonoBehaviour:
     height: 142
   nodeTitle: 
   children:
-  - {fileID: -1063923047592724484}
+  - {fileID: -3230183660304042369}
   conditions: []
   enterActions: []
   exitActions: []
@@ -2296,10 +2650,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Hey, how's it going?
+  text: All as usual.
   children:
-  - {fileID: -3079132226533676308}
+  - {fileID: 2306784506264063480}
   _uniqueId: 0988b80f-8bdd-4a96-a768-291af5dfb545
+--- !u!114 &7036231620220601587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 2da6b23a-b705-49de-97c1-cd8e9034c80c
+  rect:
+    serializedVersion: 2
+    x: 50975.2
+    y: 50300.8
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -1104754592575996046}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
+  audio: {fileID: 0}
+  dialogue: "Everyone knows there are no inns in the Briradon. They\u2019re too cheap
+    for the capital."
 --- !u!114 &7552969389912260000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2422,6 +2806,22 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 032833b14a8d8784e87578f2135faa43, type: 2}
   audio: {fileID: 0}
   dialogue: Unlike many tipplers here, I usually remember my booze evenings.
+--- !u!114 &8505644457295045488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: "Four years won\u2019t make you go broke. I guarantee."
+  children:
+  - {fileID: -5384101955371572553}
+  _uniqueId: e23357ef-816f-4454-af47-23f915db607a
 --- !u!114 &9010377829648569636
 MonoBehaviour:
   m_ObjectHideFlags: 0
