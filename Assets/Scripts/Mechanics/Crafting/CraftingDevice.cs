@@ -53,9 +53,11 @@ public class CraftingDevice : Interactable {
             case DeviceState.Idle:
                 //TODO refactor if this gets approved
                 var item = interacting.GetComponent<ItemHolder>()?.Item;
+                //TODO count once
                 var empty = System.Array.Exists(slots, slot => slot.Quantity == 0);
+                var filled = System.Array.FindAll(slots, slot => slot.Quantity == 0).Length;
                 if(item != null && empty) return true;
-                else if(item == null) return true;
+                else if(item == null && filled > 0) return true;
                 else return false;
 
                 // if(GetComponent<ItemHolder>().Quantity > 0) return false;

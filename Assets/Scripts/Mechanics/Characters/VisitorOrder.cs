@@ -4,7 +4,9 @@ using UnityEngine;
 public class VisitorOrder : ScriptableObject {
     [field: SerializeField, Min(0f)] public float Duration { get; private set; }
 
+    //TODO use filter
     [SerializeField] private Tag[] tags;
+    [SerializeField] private Item[] items;
     [SerializeField] private Sprite icon;
     [SerializeField] private Reward[] rewards;
 
@@ -19,6 +21,8 @@ public class VisitorOrder : ScriptableObject {
 
     public bool Validate(Item item){
         if(item == null) return false;
+
+        foreach(var i in items) if(i == item) return true;
 
         foreach(var tag in tags) if(System.Array.IndexOf(item.Tags, tag) == -1) return false;
 
