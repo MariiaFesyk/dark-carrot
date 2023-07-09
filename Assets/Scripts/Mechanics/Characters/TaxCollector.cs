@@ -16,8 +16,10 @@ public class TaxCollector : Interactable {
 	void OnPhaseTransition(Phase phase){
         if(phase.enabled){
 			dialogIcon.SetActive(true);
+			gameObject.SetActive(true);
 		}else{
 			dialogIcon.SetActive(false);
+			gameObject.SetActive(false);
 		}
     }
 	
