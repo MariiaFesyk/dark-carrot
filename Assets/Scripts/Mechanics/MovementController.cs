@@ -19,10 +19,7 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
     }
 
     void FixedUpdate(){
-        if(pressed){
-            direction = Vector2.ClampMagnitude(targetPosition - (Vector2) transform.position, 1.0f);
-            if(direction.sqrMagnitude < 1e-3) direction = Vector2.zero;
-        }
+        if(pressed) direction = lookDirection;
 
         bool stopping = direction.sqrMagnitude == 0f;
 
@@ -55,7 +52,7 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
     public void OnInteract(InputAction.CallbackContext context){}
 
 
-    private Vector2 targetPosition;
+    private Vector2 lookDirection;
     private bool pressed = false;
     public void OnTargetMove(InputAction.CallbackContext context){
         Vector2 target = context.ReadValue<Vector2>();
@@ -65,8 +62,10 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
                 pressed = false;
                 return;
             }
-            
-            targetPosition = Camera.main.ScreenToWorldPoint(target);
+            Vector2 targetPosition = Camera.main.ScreenToWorldPoint(target);
+            lookDirection = Vector2.ClampMagnitude(targetPosition - (Vector2) transform.position, 1.0f);
+            const float deadzone = 0.1f;
+            if(lookDirection.sqrMagnitude < deadzone) lookDirection = Vector2.zero;
         }
     }
     public void OnTargetTrigger(InputAction.CallbackContext context){
