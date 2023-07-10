@@ -942,7 +942,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: ff0b37c8b6670474bb819aa418f8db23, type: 2}
   audio: {fileID: 0}
-  dialogue: es. Just write your name.
+  dialogue: Yes. Just write your name.
 --- !u!114 &-145999337348601352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   - {fileID: -332662189588415078}
   - {fileID: 5018855228460532334}
   root: {fileID: -6991487895610374690}
-  scrollPosition: {x: 50398.6, y: 50922.7}
+  scrollPosition: {x: 51611.6, y: 50226.7}
 --- !u!114 &164055356489089328
 MonoBehaviour:
   m_ObjectHideFlags: 1

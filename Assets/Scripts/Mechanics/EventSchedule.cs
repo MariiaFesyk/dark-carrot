@@ -23,6 +23,8 @@ public class EventSchedule : MonoBehaviour {
     void OnPhaseTransition(Phase phase){
         if(phase.enabled && phase.count == 2){
             enableOnSecondDay.SetActive(true);
+            var queue = FindObjectOfType<VisitorQueue>();
+            if(queue) queue.available = queue.QueryAvailable();
         }
     }
 }
