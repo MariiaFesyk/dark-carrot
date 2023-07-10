@@ -47,12 +47,20 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 95e005655a8285f4d948e97c69d95bc5, type: 3}
   - {fileID: 21300000, guid: f3b83638b53a5ef4abf54d18055074db, type: 3}
   - {fileID: 21300000, guid: 69d2cf393611ef245b25ab76dce725cd, type: 3}
-  - {fileID: 21300000, guid: 537809e9daa2f164893bcf29950b6530, type: 3}
+  - {fileID: 1384314329, guid: 537809e9daa2f164893bcf29950b6530, type: 3}
+  - {fileID: 717836169, guid: 537809e9daa2f164893bcf29950b6530, type: 3}
+  - {fileID: -697117457, guid: 537809e9daa2f164893bcf29950b6530, type: 3}
+  - {fileID: -1118425932, guid: 537809e9daa2f164893bcf29950b6530, type: 3}
   - {fileID: 21300000, guid: 3b7a848b149f4704a9af9b0f6f0c91e3, type: 3}
   - {fileID: 21300000, guid: 7354761dabe8a05419dda424d8a8c234, type: 3}
-  - {fileID: 21300000, guid: e64fe1fd2cf6c994dbece6f776babbf1, type: 3}
-  - {fileID: 21300000, guid: f318ab0e252e83d4790e9c65460d5663, type: 3}
-  - {fileID: 21300000, guid: 7d9ec86e175ba81458decc8245f7175d, type: 3}
+  - {fileID: 1829734529, guid: e64fe1fd2cf6c994dbece6f776babbf1, type: 3}
+  - {fileID: -419547418, guid: e64fe1fd2cf6c994dbece6f776babbf1, type: 3}
+  - {fileID: 518045271, guid: e64fe1fd2cf6c994dbece6f776babbf1, type: 3}
+  - {fileID: 907239014, guid: e64fe1fd2cf6c994dbece6f776babbf1, type: 3}
+  - {fileID: 1001758572, guid: f318ab0e252e83d4790e9c65460d5663, type: 3}
+  - {fileID: 1403831767, guid: f318ab0e252e83d4790e9c65460d5663, type: 3}
+  - {fileID: -1021374351, guid: 7d9ec86e175ba81458decc8245f7175d, type: 3}
+  - {fileID: -835129935, guid: 7d9ec86e175ba81458decc8245f7175d, type: 3}
   - {fileID: 21300000, guid: 807761fe579ce6847aa8ed9abd713d9d, type: 3}
   m_PackedSpriteNamesToIndex:
   - wall column left
@@ -60,12 +68,20 @@ SpriteAtlas:
   - wall column inner
   - border l
   - wall column right
-  - hall wall 6x
+  - hall wall 6x_1
+  - hall wall 6x_3
+  - hall wall 6x_2
+  - hall wall 6x_4
   - wall column outer
   - border t
-  - kitchen wall 6x
-  - kitchen wall 4x
-  - hall wall 4x
+  - kitchen wall 6x_2
+  - kitchen wall 6x_3
+  - kitchen wall 6x_1
+  - kitchen wall 6x_4
+  - kitchen wall 4x_1
+  - kitchen wall 4x_2
+  - hall wall 4x_2
+  - hall wall 4x_1
   - border b
   m_RenderDataMap: {}
   m_Tag: TilemapAtlas
