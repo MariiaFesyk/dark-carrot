@@ -19,10 +19,7 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
     }
 
     void FixedUpdate(){
-        if(pressed){
-            direction = Vector2.ClampMagnitude(targetPosition - (Vector2) transform.position, 1.0f);
-            if(direction.sqrMagnitude < 1e-3) direction = Vector2.zero;
-        }
+        if(pressed) direction = lookDirection;
 
         bool stopping = direction.sqrMagnitude == 0f;
 
@@ -55,25 +52,28 @@ public class MovementController : MonoBehaviour, InputActions.IPlayerActions {
     public void OnInteract(InputAction.CallbackContext context){}
 
 
-    private Vector2 targetPosition;
+    private Vector2 lookDirection;
     private bool pressed = false;
+    //TODO uncooment once webgl is resolved https://issuetracker.unity3d.com/issues/webgl-player-crashes-when-calling-inputsystem-dot-registerbindingcomposite-function-with-runtimeinitializeonloadmethod-attribute
     public void OnTargetMove(InputAction.CallbackContext context){
-        Vector2 target = context.ReadValue<Vector2>();
-        if(Camera.main){
-            var ndc = Camera.main.ScreenToViewportPoint(target);
-            if(ndc.x < 0 || ndc.x > 1 || ndc.y < 0 || ndc.y > 1){
-                pressed = false;
-                return;
-            }
-            
-            targetPosition = Camera.main.ScreenToWorldPoint(target);
-        }
+        // Vector2 target = context.ReadValue<Vector2>();
+        // if(Camera.main){
+        //     var ndc = Camera.main.ScreenToViewportPoint(target);
+        //     if(ndc.x < 0 || ndc.x > 1 || ndc.y < 0 || ndc.y > 1){
+        //         pressed = false;
+        //         return;
+        //     }
+        //     Vector2 targetPosition = Camera.main.ScreenToWorldPoint(target);
+        //     lookDirection = Vector2.ClampMagnitude(targetPosition - (Vector2) transform.position, 1.0f);
+        //     const float deadzone = 0.1f;
+        //     if(lookDirection.sqrMagnitude < deadzone) lookDirection = Vector2.zero;
+        // }
     }
     public void OnTargetTrigger(InputAction.CallbackContext context){
-        if(context.performed) pressed = true;
-        if(context.canceled){
-            pressed = false;
-            direction = Vector2.zero;
-        }
+        // if(context.performed) pressed = true;
+        // if(context.canceled){
+        //     pressed = false;
+        //     direction = Vector2.zero;
+        // }
     }
 }

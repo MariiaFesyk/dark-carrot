@@ -22,7 +22,7 @@ public class VisitorOrder : ScriptableObject {
     public bool Validate(Item item){
         if(item == null) return false;
 
-        foreach(var i in items) if(i == item) return true;
+        if(items != null) foreach(var i in items) if(i == item) return true;
 
         foreach(var tag in tags) if(System.Array.IndexOf(item.Tags, tag) == -1) return false;
 
